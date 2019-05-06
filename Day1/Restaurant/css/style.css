@@ -1,0 +1,48 @@
+body {
+    color: green;
+    background-image: url("../images/background.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+h1{
+    color: green;
+    text-align: center;
+}
+
+/* use the id name */
+#second-heading {
+    color: red;
+}
+/* class uses a .nottation */
+
+.second-heading {
+    color: blue;
+}
+
+h1{
+    color: purple;
+}
+
+#main {
+    background-color:rgba(242, 244, 247, 0.3);
+}
+
+/* alter child elements style */
+
+#main h1{
+    color: blue;
+    /* font-size: 30%; */
+}
+#main img {
+    /* text-align: center; */
+    /* margin-left: 33%; */
+    border: 4px solid green;
+}
+
+#images{
+    display: flex;
+}
+#images p{
+    /* padding: 50px; */
+    padding-left: 50px;
+}

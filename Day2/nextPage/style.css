@@ -1,0 +1,72 @@
+body{
+    margin: 0; /* there is a light margin around body as default*/
+    padding: 0;
+}
+
+header {
+    background-color: #a19491; /*use inspect then colour picker to match colours*/
+    min-height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+#main {
+    background-color: white;
+    width: 100%;
+    min-height: 100vh; /*occupies whole screen regardless of screen*/
+    background-image: url("./images/canvas.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 1;
+    background-position: fixed;
+}
+
+#main-text{
+    text-align: center;
+    padding-top: 200px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+}
+
+#about {
+    background-color: grey;
+    min-height: 700px; 
+}
+#projects {
+    background-color: white;
+    min-height: 700px; 
+}
+
+#contact {
+    background-color: grey;
+    min-height: 700px; 
+}
+
+footer {
+    background-color: whitesmoke; 
+    min-height: 200px;
+}
+
+ul {
+    list-style-type: none; /*removes bullet points from list */
+}
+
+li {
+    float: right;
+    padding: 40px 16px;
+    font-size: 1.2em;
+    font-family: 'Amatic SC', cursive;
+  }
+
+li a {
+    text-decoration: none;
+}
+
+#logo {
+    width: 90px;
+    height: 90px;
+    float: left;
+    padding: 5px;
+}

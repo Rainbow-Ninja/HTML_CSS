@@ -1,0 +1,26 @@
+h1{
+    color: rgba(0, 120, 255, 0.7);
+    font-size: 105px;
+}
+
+#css{
+    color: purple;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border: 4px solid red;
+}
+
+.background {
+    border: 4px dotted purple;
+}
+
+#cute{
+    border: 10px dashed blue; 
+}
+
+body{
+    background-image: url("./Images/back2.jpeg")
+}

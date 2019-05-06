@@ -1,0 +1,31 @@
+body{
+    color:yellow;
+}
+
+<h1> {
+    color:green;
+}
+
+#second-heading{
+    color:purple;
+}
+table {
+    color: purple;
+    border: 2px solid green;
+}
+#main{
+    background-color:paleturquoise;
+}
+
+/* whatever I have after overrides previous. This next bit says in the main bit look for h1 */
+#main h1{
+    color:blue;
+}
+#main img{
+    margin-left: 20%;
+    border: 4px solid red;
+}
+
+#images{
+    display: flex;
+}

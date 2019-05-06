@@ -1,0 +1,31 @@
+#earlylife-body{
+    background-image: url("http://www.fond-ecran.net/fonds/mika_001.jpg");
+}
+
+#mika-face{
+    align: center;
+    padding: 20px;
+}
+
+#homeBody {
+    background-image: url("./images/bg-brown.jpeg");
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    height: 60px;
+    background-color: #a37953;
+    width: 100%;
+}
+
+nav a {
+    float: right;
+    padding: 20px;
+}
+
+#earlyLife-Body{
+
+}
