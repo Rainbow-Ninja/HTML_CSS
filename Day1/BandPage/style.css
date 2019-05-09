@@ -13,12 +13,16 @@
 
 h1 {
     font-family: 'Raleway', sans-serif;
+    color: darkblue;
+    font-weight: bold;
+    letter-spacing: 0.7em;
 }
 
 nav {
     height: 60px;
     background-color: #a37953;
     width: 100%;
+    position: fixed;
 }
 
 nav a {
@@ -28,4 +32,14 @@ nav a {
 
 #earlyLife-Body{
 
+}
+
+#discBody{
+    background-image: url("./images/bg-white.jpeg");
+}
+
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
 }

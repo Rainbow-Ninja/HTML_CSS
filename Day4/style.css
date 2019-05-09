@@ -1,0 +1,34 @@
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: whitesmoke;
+    border-radius: .3rem;
+}
+
+
+.spinner-grow {
+-webkit-animation: spinner-grow .75s linear infinite, rainbow 6s infinite;
+animation: spinner-grow .75s linear infinite, rainbow 6s infinite;
+/* color: #FFEB3B; */
+}
+
+@keyframes rainbow{
+    16.7%{
+        color: blue;
+    }
+    33.3%{
+        color: green;
+    }
+    50%{
+        color: yellow;
+    }
+    66.7%{
+        color: orange;
+    }
+    83.3%{
+        color: red;
+    }
+    100%{
+        color: purple;
+    }
+}

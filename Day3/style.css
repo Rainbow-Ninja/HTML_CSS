@@ -1,0 +1,26 @@
+div {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-size: cover; /*cover will stretch youll lose some of your pic. contain youll get repeats*/
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#one{
+    background-color: red;
+    background-image: url("./images/back2.jpeg");
+    border-radius: 200px;
+}
+
+#two{
+    background-color: blue;
+    background-image: url("./images/winky.jpeg");
+    border-radius: 0 200px;
+}
+
+#three{
+    background-color: green;
+    background-image: url("./images/squirrel.jpeg");
+    border-radius: 10px 50px 500px 200px;
+}

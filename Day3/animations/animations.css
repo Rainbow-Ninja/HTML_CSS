@@ -1,0 +1,41 @@
+#container{
+    background-image: url("../images/background.jpeg");
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 5px 2px #000;
+}
+
+#container div{
+    background-color: (255, 255, 255, 0.5);
+    animation: animate 5s infinite; /*give it the name animate - could be any name*/
+}
+
+#container h1{
+    text-align: center;
+    padding-top: 175px;
+    font-size: 4em;
+}
+
+@keyframes animate{
+    20%{
+        color: red;
+        transform: rotate(0deg);
+    }
+    40%{
+        color: purple;
+        transform: rotate(90deg);
+    }
+    60%{
+        color: blue;
+        transform: rotate(270deg);
+    }
+    80%{
+        color: green;
+        transform: rotate(360deg);
+    }
+    100%{
+        color: yellow;
+    }
+}

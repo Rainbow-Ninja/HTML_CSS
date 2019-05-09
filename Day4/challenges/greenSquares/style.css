@@ -1,0 +1,76 @@
+#container{
+    display: flex;
+    flex-basis: 700px;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+div{
+    border: 5px solid black;
+    background-color: lime;
+    margin: 10px;
+    width: 100%;
+}
+
+#top{
+    display:flex;  
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+#top div:nth-child(2){
+    flex-basis: 65%;
+    flex-grow: 5;
+    margin: 10px 70px;
+    flex-shrink: 0;
+}
+
+
+#second {
+    display: flex;
+    width: 100%;
+}
+
+
+#second div:nth-child(1){
+    flex-basis: 70%;
+}
+
+#second div:nth-child(2){
+    flex-basis: 10%;
+}
+
+#second div:nth-child(3){
+    flex-basis: 20%;
+}
+
+#third{
+    display: flex;
+    width: 100%;
+}
+
+#third div:nth-child(1){
+    flex-basis: 10%;
+}
+
+#third div:nth-child(2){
+    flex-basis: 30%;
+}
+
+#third div:nth-child(3){
+    flex-basis: 60%;
+}
+
+#last{
+    display: flex;
+    width: 100%;
+}
+#last div:nth-child(2), div:nth-child(4){
+    flex-basis:9%;
+    margin: 10px 30px;
+}
+
+#last div:nth-child(1), div:nth-child(3), div:nth-child(5){
+    flex-basis: 24%;
+}

@@ -1,0 +1,23 @@
+#container{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
+header, footer{
+    background-color: rgb(161, 247, 42);
+    flex-grow: 1;
+    height: 100px;
+    flex: 100%;
+}
+
+nav, aside{
+    background-color: rgb(221, 232, 206);
+    flex-grow: 1;
+    height:300px;
+}
+
+article{
+    flex-grow: 3;
+    height:300px;
+}
