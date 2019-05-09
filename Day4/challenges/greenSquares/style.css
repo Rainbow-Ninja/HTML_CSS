@@ -15,17 +15,19 @@ div{
 #top{
     display:flex;  
     width: 100%;
-    flex-grow: 1;
-    flex-shrink: 2;
 }
 
 #top div:nth-child(2){
-    flex-basis: 65%;
-    flex-grow: 5;
-    margin: 10px 70px;
+    flex-basis: 60%;
+    flex-grow: 2;
+    margin: 10px 10%;
     flex-shrink: 0;
 }
 
+#top div:nth-child(1), div:nth-child(3){
+    flex-basis: 10%;
+    flex-shrink: 2;
+}
 
 #second {
     display: flex;
