@@ -1,0 +1,14 @@
+#one{
+    background: purple;
+}
+
+#two {
+    background: green;
+}
+
+@media only screen and (max-width: 600px){
+    #one{
+        background: blue;
+        font-size: 2em;
+    }
+}

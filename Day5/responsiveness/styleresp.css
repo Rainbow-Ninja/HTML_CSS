@@ -1,0 +1,23 @@
+#container{
+    background: #333;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#container div img {
+    width: 100%;
+    height: 200px;
+}
+
+@media only screen and (max-width: 600px){
+    #container{
+        flex-wrap: wrap;
+    }
+
+    #container p{
+        padding: 0 5%;
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,54 @@
+
+body{
+    width: 100%;
+    font-size: 1.2em;
+}
+
+#container{
+    display: flex;
+    height: 400px;
+}
+
+#container img{
+    max-width: 50%;
+    transition: max-width 0.5s;
+}
+
+#container img, #ingredients{
+    flex: 1, 0, 100%;
+}
+
+#directions{
+    flex-grow: 2, 1, 100%;
+    background-color: rgba(253, 253, 150, 0.8);
+    padding: 5px;
+}
+
+ul{
+    background-color: rgba(250, 250, 250, 0.7);
+    position: absolute;
+    top: 0;
+    left: 52%;
+    height: 370px;
+}
+
+@media only screen and (max-width: 600px){
+    #container{
+        flex-wrap: wrap;
+       
+    }
+
+    #container img, #ingredients{
+        max-width: 100%;
+    }
+
+    ul{
+        top: 72%;
+        left: 4%;
+        height: 370px;
+    }
+
+    ol{
+        margin-top: 450px;
+    }
+}

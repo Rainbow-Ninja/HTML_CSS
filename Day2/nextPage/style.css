@@ -4,7 +4,7 @@ body{
 }
 
 header {
-    background-color: #a19491; /*use inspect then colour picker to match colours*/
+    background-color: white; /*use inspect then colour picker to match colours*/
     min-height: 100px;
     width: 100%;
     position: fixed;
@@ -12,41 +12,57 @@ header {
 }
 
 #main {
-    background-color: white;
+    /* background-color: white; */
     width: 100%;
     min-height: 100vh; /*occupies whole screen regardless of screen*/
-    background-image: url("./images/canvas.jpeg");
+    /* background-image: url("./images/canvas.jpeg"); */
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     z-index: 1;
     background-position: fixed;
+    /* background: conic-gradient(#38015a, rgb(228, 138, 3)); */
+        /* background-image:
+          radial-gradient(red, purple, blue, green, yellow,  #f06d06); */
+         
+            /* background: conic-gradient(lime, yellow, red); */
+            background: conic-gradient(from 90deg,purple, yellow);
+          
+      }
+      
+
+#main img{
+    justify-content: center;
+    align-items: center;
+    margin: 100px 400px;
 }
 
 #main-text{
     text-align: center;
-    padding-top: 200px;
+    padding-top: 100px;
     font-family: 'Indie Flower', cursive;
     font-size: 1.5em;
 }
 
 #about {
     background-color: grey;
-    min-height: 700px; 
+    min-height: 300px; 
 }
 #projects {
     background-color: white;
-    min-height: 700px; 
+    min-height: 300px; 
 }
 
 #contact {
     background-color: grey;
-    min-height: 700px; 
+    min-height: 300px; 
 }
 
 footer {
     background-color: whitesmoke; 
     min-height: 200px;
+    align-content: center;
+    justify-items: center;
 }
 
 ul {
