@@ -15,14 +15,24 @@ body{
     height: 350px;
 }
 
-ul {
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-   overflow: hidden;
-   background-color: #333;
-   z-index: 10;
+#contact{
+    height: 350px;
 }
+
+#nav{
+    position: fixed;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+   }
 
 li {
    float: right;
@@ -138,8 +148,37 @@ h1{
     border:0;    
 }
 
+#circle{
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-image: linear-gradient( to right, red 15%, orange, yellow, #26f91b, blue, purple);
+    border-radius: 100px 100px 100px 100px;
+    /* z-index: -1; */
+}
 
+#circle img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px 100px 100px 100px;
+    padding: 5px;
+}
 
+#about p{
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 300px 80px 0 80px;
+}
+
+#aboutBoxback h1, h3{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin-left: 50px;
+}
 
 @media only screen and (max-width: 600px){
 
