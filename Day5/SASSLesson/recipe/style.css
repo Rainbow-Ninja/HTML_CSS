@@ -2,6 +2,8 @@
 body{
     width: 100%;
     font-size: 1.2em;
+    background-color: rgba(253, 253, 150, 0.8);
+    margin: 0;
 }
 
 #container{
@@ -25,11 +27,26 @@ body{
 }
 
 ul{
-    background-color: rgba(250, 250, 250, 0.7);
+    background-color: rgba(215, 211, 138, 0.78);
     position: absolute;
-    top: 0;
+    top: 13%;
     left: 52%;
     height: 370px;
+    align-content: center;
+    margin-right: 10px;
+}
+
+.first-letter{
+    color: rgb(161, 19, 25);
+}
+
+h2{
+    text-align: center;
+    color: rgba(78, 63, 10, 1);
+}
+
+h3{
+    color: rgba(78, 63, 10, 1);
 }
 
 @media only screen and (max-width: 600px){
@@ -43,8 +60,8 @@ ul{
     }
 
     ul{
-        top: 72%;
-        left: 4%;
+        top: 77%;
+        left: 2%;
         height: 370px;
     }
 
