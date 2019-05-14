@@ -1,0 +1,122 @@
+/* font-family: 'Philosopher', sans-serif;
+font-family: 'Bubblegum Sans', cursive; */
+
+body{
+   background-color: #222;
+   margin: 0;
+   padding: 0;
+}
+
+#homepage{
+    height: 450px;
+}
+
+#projects{
+    height: 350px;
+}
+
+ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+   z-index: 10;
+}
+
+li {
+   float: right;
+   z-index: 10;
+   font-family: 'Philosopher', sans-serif;
+   font-size: 1.2em;
+}
+  
+li a {
+   display: block;
+   color: white;
+   text-align: right;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+  
+li a:hover {
+   background-color: #111;
+}
+
+#rainbowBall{
+    margin-top: 30px;
+    height: 200px;
+    width: 450px;
+    position: absolute;
+    top: 0;
+    left: 70%;
+    background-image: linear-gradient( 45deg, red 15%, orange, yellow, #26f91b, blue, purple);
+    border-radius: 0 0 0 125px;
+    z-index: -1;
+}
+
+#photo{
+    width: 75%;
+    height: 300px;
+    /* background-color: grey; */
+    border-radius: 0 0 100px 0;
+    background-image: linear-gradient(to right, red, orange, yellow, #26f91b, blue, purple);
+    position: relative;
+    z-index: -2;
+}
+
+#backing{
+    background-color: #222;
+    /* padding: 5px; */
+    width: 99%;
+    height: 97%;
+    border-radius: 0 0 100px 0;
+    
+}
+
+.lineDivider{
+    display:flex;
+    width: 100%;
+    height: 100px;
+    border-radius: 100px 0 0 100px;
+    background-image: linear-gradient(to right, red, orange, yellow, #26f91b, blue, purple);
+    position: relative;
+    z-index: -2;
+}
+
+.lineDivBack{
+    align-items: center;
+    background-color: #222;
+    margin: 10px 0 10px 10px;
+    width: 30%;
+    height: 80%;
+    border-radius: 100px 0 0 100px;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+.secondDivBack{
+    width:70%;
+    height: 90%;
+    justify-content: flex-start;
+    background-color: #222;
+    z-index:-1;
+}
+
+h1{
+    margin: 1.5vh 0 0 5vh;
+    font-family: 'Bubblegum Sans', cursive;
+    color: white;
+    letter-spacing: 0.5em;
+    z-index: 10;
+    font-size: 3em;
+    font-weight: bold;
+    border:0;    
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+
+}
