@@ -1,0 +1,461 @@
+/* font-family: 'Philosopher', sans-serif;
+font-family: 'Bubblegum Sans', cursive; 
+font-family: 'Delius Unicase', cursive;*/
+
+:root{
+    --rainbow:  rgba(255, 0, 0, 1) 10%, rgba(265, 165, 0, 1), rgba(252, 252, 4, 1), rgba(17, 253, 5, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1);
+}
+
+
+/* Rainbow Scrolly -------------------------------------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #777; 
+    border-radius: 10px;  
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--rainbow)); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(rgba(255, 0, 0, 0.7) 10%, rgba(265, 165, 0, 0.7), rgba(252, 252, 4, 0.7), rgba(17, 253, 5, 0.7), rgba(0, 0, 255, 0.7), rgba(128, 0, 128, 0.7));
+  }
+
+/* Body -------------------------------------------------------------------- */
+
+body{
+   background-color: #222;
+   margin: 0;
+   padding: 0;
+}
+
+p{
+    color: white;
+    font-size: 1.5em;
+}
+
+/* Nav Bar -------------------------------------------------------------------- */
+
+nav{
+    position: fixed;
+    /* overflow: hidden; */
+    background-color: #333;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+ul {
+    display: inline-block;
+    float: right;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+   }
+
+li {
+   display: inline-block;
+   z-index: 10;
+   font-family: 'Philosopher', sans-serif;
+   font-size: 1.2em;
+}
+  
+li a {
+   display: block;
+   color: white;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+  
+li a:hover {
+   background-color: #111;
+}
+
+/* HomePage -------------------------------------------------------------------- */
+
+#homepage{
+    display: flex;
+    margin: 0;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    align-items: flex-end;
+}
+
+#homepagebox{
+    height: 250px;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient( to right, var(--rainbow));
+    border-radius: 0 0 125px 0;
+    z-index: -1;
+}
+
+#homepageBoxback{
+    position: absolute;
+    height: 97%;
+    width: 99%;
+    top: 0;
+    background-color: #222;
+    border-radius: 0 0 125px 0;
+}
+
+#homepage p{
+    text-align: center;
+    padding: 300px 80px 0 80px;
+}
+
+#homepageBoxback h1, h3{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin-left: 50px;
+}
+
+#circle{
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-image: linear-gradient( to right, var(--rainbow));
+    border-radius: 100px 100px 100px 100px;
+}
+
+#circle img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px 100px 100px 100px;
+    padding: 5px;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section div{
+    max-width: 300px;
+    max-height: auto;
+    width: auto;
+    height: auto;
+}
+
+section div a{
+    word-wrap: break-word;
+    font-family: 'Philosopher', sans-serif;
+    text-decoration: none;
+    font-size: 7em;
+    font-weight: bold;
+    text-align: justify;
+}
+
+#ProjectsLink, #AboutLink{
+    font-size: 1.1em;
+}
+
+section div a:hover{
+    color: rgba(128, 0, 128, 0.4);
+}
+
+/* Homepage Decoration -------------------------------------------------------------------- */
+
+#rainbowBall{
+    height: 200px;
+    width: 29.5vw;
+    position: absolute;
+    top: 0;
+    left: 70%;
+    background-image: linear-gradient( 45deg, var(--rainbow));
+    border-radius: 0 0 0 125px;
+    z-index: -1;
+}
+
+#photo{
+    width: 75%;
+    height: 300px;
+    border-radius: 0 0 100px 0;
+    background-image: linear-gradient(to right, var(--rainbow));
+    position: relative;
+    z-index: -2;
+}
+
+#backing{
+    background-color: #222;
+    width: 99%;
+    height: 97%;
+    border-radius: 0 0 100px 0;    
+}
+
+#backing img{
+    position: absolute;
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+#logo{
+    top:0;
+    left: 0;
+}
+
+#image{
+    position: relative;
+    width: 35%;
+    height: 90%;
+    margin: 7% 45%;
+    z-index: 10;
+    border-radius: 100px;
+}
+
+#roroshadow{
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 30px 20px #222;
+}
+
+/* About -------------------------------------------------------------------- */
+
+#about{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border: 0;
+}
+
+#about p{
+    padding: 20px;
+}
+
+/* Projects -------------------------------------------------------------------- */
+
+#projects{
+    padding: 20px 0 0 0;
+    height: auto;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.2) 10%, rgba(265, 165, 0, 0.2), rgba(252, 252, 4, 0.2), rgba(17, 253, 5, 0.2), rgba(0, 0, 255, 0.2), rgba(128, 0, 128, 0.2));
+}
+
+#projectbg{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 5vh;
+}
+
+#projectbg p{
+    margin: 0;
+    border: 0;
+    text-align: center;
+    padding: 10px 0 30px 0;
+    width: 100%;
+}
+
+#projectbg h3{
+    border: 0;
+    margin: 0;
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+
+#projects h1{
+    color: white; /*fix this it's see thru!!*/
+    position: absolute;
+    z-index: 2;
+}
+
+#PacmanSection {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50vw;
+    width: auto;
+    height: auto;
+    flex: 1 1 50%;
+    justify-content: space-around;
+}
+
+#MazeSection {
+    max-width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    flex: 1 1 50%;
+    justify-content: space-around;
+}
+
+#CongratsSection {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 30vw;
+    width: auto;
+    height: auto;
+    flex: 1 1 30%;
+    justify-content: space-around;
+}
+
+#TictactoeSection {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 30vw;
+    width: auto;
+    height: auto;
+    flex: 1 1 30%;
+    justify-content: space-around;
+}
+
+#ExercismSection {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 30vw;
+    width: auto;
+    height: auto;
+    flex: 1 1 30%;
+    justify-content: space-around;
+}
+
+#projectbg video {
+    margin: 0 auto;
+    flex: 2 1 400px;
+    align-self: center;
+}
+
+video {
+    margin: 0 auto;
+    max-width: 400px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    flex: 2 1 400px;
+    padding: 20px;
+}
+
+#projectbg img {
+    max-height: 300px;
+    max-width: 400px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+}
+
+#pacman:hover {
+    box-shadow: 0px 0px 10px 10px red;
+}
+
+#maze:hover {
+    box-shadow: 0px 0px 10px 10px orange;
+} 
+
+#congrats:hover {
+    box-shadow: 0px 0px 10px 10px yellow;
+}
+
+#tictactoe:hover {
+    box-shadow: 0px 0px 10px 10px rgba(17, 253, 5, 1);
+}
+
+#exercism:hover {
+    box-shadow: 0px 0px 10px 10px blue;
+}
+
+
+/* Contact -------------------------------------------------------------------- */
+
+#contact{
+    /* height: 50px; */
+    margin-top: 20px;
+}
+
+#contactArea{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* #contactPic{
+    margin: 10vh 0; 
+    width: 30vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(34, 34, 34, 1), rgba(34, 34, 34, 0)),url('images/laptop.jpeg');
+    background-blend-mode: darken;
+} */
+
+#contactArea p{
+    max-width: 50vw;
+}
+
+/* Rainbow Dividers -------------------------------------------------------------------- */
+
+.lineDivider{
+    display:flex;
+    width: 100%;
+    height: 100px;
+    border-radius: 100px 0 0 100px;
+    background-image: linear-gradient(to right, var(--rainbow));
+    position: relative;
+    z-index: -2;
+}
+
+.lineDivBack{
+    align-items: center;
+    background-color: #222;
+    margin: 10px 0 10px 10px;
+    width: 30%;
+    height: 80%;
+    border-radius: 100px 0 0 100px;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+.secondDivBack{
+    width:70%;
+    height: 90%;
+    justify-content: flex-start;
+    background-color: #222;
+    z-index:-1;
+}
+
+
+/* General -------------------------------------------------------------------------- */
+
+h1{
+    margin: 1.5vh 0 0 5vh;
+    font-family: 'Bubblegum Sans', cursive;
+    color: white;
+    letter-spacing: 0.5em;
+    z-index: 10;
+    font-size: 3em;
+    font-weight: bold;
+    border:0;    
+}
+
+/* Animations ---------------------------------------------------------------------- */
+
+/* Responsive ---------------------------------------------------------------------- */
+
+@media only screen and (max-width: 600px){
+
+}

@@ -1,10 +1,39 @@
 /* font-family: 'Philosopher', sans-serif;
 font-family: 'Bubblegum Sans', cursive; */
+:root{
+    --rainbow:  rgba(255, 0, 0, 1) 10%, rgba(265, 165, 0, 1), rgba(252, 252, 4, 1), rgba(17, 253, 5, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1);
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #777; 
+    border-radius: 10px;  
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--rainbow)); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(rgba(255, 0, 0, 0.7) 10%, rgba(265, 165, 0, 0.7), rgba(252, 252, 4, 0.7), rgba(17, 253, 5, 0.7), rgba(0, 0, 255, 0.7), rgba(128, 0, 128, 0.7));
+  }
 
 body{
    background-color: #222;
    margin: 0;
    padding: 0;
+}
+
+p{
+    color: white;
+    font-size: 1.5em;
 }
 
 #homepage{
@@ -17,19 +46,16 @@ body{
 
 #projectbg{
     display: flex;
-    /* flex-direction: row-reverse; */
     justify-content: space-between;
     max-width: 100%;
-    /* max-height: 500px; */
     width: auto;
     height: auto;
 }
 
-#projectbg #hi{
+#projectbg #sidepic{
     /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
     width: 25vw;*/
     margin: 10vh 0; 
-    /* height: 300px; */
     width: 30vw;
     height: 100vh;
     background-size: contain;
@@ -43,26 +69,54 @@ body{
 }
 
 #contact{
-    height: 350px;
+    /* height: 50px; */
 }
 
-#nav{
+#contactArea{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+#contactPic{
+    margin: 10vh 0; 
+    width: 30vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(34, 34, 34, 1), rgba(34, 34, 34, 0)),url('images/laptop.jpeg');
+    background-blend-mode: darken;
+}
+
+#contactArea p{
+    max-width: 50vw;
+}
+
+nav{
     position: fixed;
+    /* overflow: hidden; */
+    background-color: #333;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 ul {
-    position: fixed;
+    display: inline-block;
+    float: right;
+    /* position: fixed; */
     top: 0;
-    width: 100%;
+    /* width: 100%; */
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
+
    }
 
 li {
-   float: right;
+   display: inline-block;
    z-index: 10;
    font-family: 'Philosopher', sans-serif;
    font-size: 1.2em;
@@ -71,7 +125,6 @@ li {
 li a {
    display: block;
    color: white;
-   text-align: right;
    padding: 14px 16px;
    text-decoration: none;
 }
@@ -83,11 +136,11 @@ li a:hover {
 #rainbowBall{
     margin-top: 30px;
     height: 200px;
-    width: 450px;
+    width: 29.5vw;
     position: absolute;
     top: 0;
     left: 70%;
-    background-image: linear-gradient( 45deg, red 15%, orange, yellow, #26f91b, blue, purple);
+    background-image: linear-gradient( 45deg, var(--rainbow));
     border-radius: 0 0 0 125px;
     z-index: -1;
 }
@@ -96,7 +149,8 @@ li a:hover {
     width: 75%;
     height: 300px;
     border-radius: 0 0 100px 0;
-    background-image: linear-gradient(to right, red, orange, yellow, #26f91b, blue, purple);
+    /* background-image: linear-gradient(to right, red, orange, yellow, #26f91b, blue, purple); */
+    background-image: linear-gradient(to right, var(--rainbow));
     position: relative;
     z-index: -2;
 }
@@ -117,6 +171,11 @@ li a:hover {
     z-index: -1;
 }
 
+#logo{
+    top:0;
+    left: 0;
+}
+
 #image{
     position: relative;
     width: 35%;
@@ -132,27 +191,12 @@ li a:hover {
     box-shadow: inset 0 0 30px 20px #222;
 }
 
-
-/* #backing #gradient{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 0 0 100px 0;
-    background-image:
-    radial-gradient(
-      circle closest-side,
-      #555,
-      #333
-    );  
-    opacity: 0.9;
-} */
-
 .lineDivider{
     display:flex;
     width: 100%;
     height: 100px;
     border-radius: 100px 0 0 100px;
-    background-image: linear-gradient(to right, red, orange, yellow, #26f91b, blue, purple);
+    background-image: linear-gradient(to right, var(--rainbow));
     position: relative;
     z-index: -2;
 }
@@ -187,7 +231,7 @@ li a:hover {
     width: 50%;
     position: absolute;
     top: 0;
-    background-image: linear-gradient( to right, red 15%, orange, yellow, #26f91b, blue, purple);
+    background-image: linear-gradient( to right, var(--rainbow));
     border-radius: 0 0 125px 0;
     z-index: -1;
 }
@@ -218,7 +262,7 @@ h1{
     position: absolute;
     top: 20px;
     left: 20px;
-    background-image: linear-gradient( to right, red 15%, orange, yellow, #26f91b, blue, purple);
+    background-image: linear-gradient( to right, var(--rainbow));
     border-radius: 100px 100px 100px 100px;
     /* z-index: -1; */
 }
@@ -231,8 +275,6 @@ h1{
 }
 
 #about p{
-    color: white;
-    font-size: 1.5em;
     text-align: center;
     padding: 300px 80px 0 80px;
 }
