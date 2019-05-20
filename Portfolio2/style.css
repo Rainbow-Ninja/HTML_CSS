@@ -6,7 +6,6 @@ font-family: 'Delius Unicase', cursive;*/
     --rainbow:  rgba(255, 0, 0, 1) 10%, rgba(255, 165, 0, 1), rgba(252, 252, 4, 1), rgba(17, 253, 5, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1);
 }
 
-
 /* Rainbow Scrolly -------------------------------------------------------------------- */
 
 ::-webkit-scrollbar {
@@ -61,8 +60,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-
-   }
+}
 
 li {
    display: inline-block;
@@ -131,17 +129,13 @@ li a:hover {
     font-size: 2em;
     width: 100%;
     margin: 0;
-    /* text-align: center; */
 }
 
 #circle{
     height: 110px;
     width: 110px;
-    /* position: absolute;
-    top: 20px;
-    left: 20px; */
     margin: 5vh;
-    background-image: linear-gradient( to right, var(--rainbow));
+    background-image: linear-gradient(to right, var(--rainbow));
     border-radius: 100px 100px 100px 100px;
 }
 
@@ -199,7 +193,6 @@ section div a:hover{
     border-radius: 0 0 0 125px;
     z-index: -1;
     animation: sparkle 1s;
-    /* transition: background-position 5s; */
 }
 
 #photo{
@@ -214,11 +207,8 @@ section div a:hover{
 /* About -------------------------------------------------------------------- */
 
 #about{
-    padding: 1px 0 0 0;
     width: 100%;
     height: auto;
-    margin: 0;
-    border: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -226,7 +216,7 @@ section div a:hover{
 
 #aboutText{
     width:50vw;
-    margin: 10vh;
+    margin: 7vh;
 }
 
 #aboutText p{
@@ -240,8 +230,10 @@ section div a:hover{
 #about #aboutImages{
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
-    width: 25%;
+    justify-content:center;
+    margin-top: 10px;
+    width: 35%;
+    height: 100%;
     position: relative;
     z-index: -1;
 }
@@ -257,22 +249,10 @@ section div a:hover{
 }
 
 #aboutImages img{
-    width: 33%;
-    /* width: 100px; */
-    height: 100px;
+    width: 25%;
+    max-height: 92px;
     object-fit: cover;
 }
-
-
-/* #contactPic{
-    margin: 10vh 0; 
-    width: 30vw;
-    height: 100vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(to right, rgba(34, 34, 34, 1), rgba(34, 34, 34, 0)),url('images/laptop.jpeg');
-    background-blend-mode: darken;
-} */
 
 /* Projects -------------------------------------------------------------------- */
 
@@ -283,17 +263,18 @@ section div a:hover{
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0.2) 10%, rgba(255, 165, 0, 0.2), rgba(252, 252, 4, 0.2), rgba(17, 253, 5, 0.2), rgba(0, 0, 255, 0.2), rgba(128, 0, 128, 0.2));
 }
 
+
 #projectbg{
     display: flex;
     justify-content: space-around;
     max-width: 100%;
     height: auto;
     flex-wrap: wrap;
-    padding: 5vh;
+    /* padding: 5vh; */
 }
 
 #projectbg p{
-    margin: 0;
+    margin: 0 0 20px 0;
     border: 0;
     text-align: center;
     padding: 10px 0 30px 0;
@@ -302,10 +283,11 @@ section div a:hover{
 
 #projectbg h3{
     border: 0;
-    margin: 0;
+    margin-top: 5vh;
     width: 100%;
-    padding: 10px 0 10px 0;
+    padding: 10px 0 5px 0;
     text-align: center;
+    color: rgb(4, 224, 253);
 }
 
 #projects h1{
@@ -322,6 +304,10 @@ section div a:hover{
     height: auto;
     flex: 1 1 50%;
     justify-content: space-around;
+}
+
+#projectbg div p{
+    max-width: 70%;
 }
 
 #MazeSection {
@@ -362,12 +348,6 @@ section div a:hover{
     height: auto;
     flex: 1 1 30%;
     justify-content: space-around;
-}
-
-#projectbg video {
-    margin: 0 auto;
-    flex: 2 1 400px;
-    align-self: center;
 }
 
 video {
@@ -414,7 +394,7 @@ video {
 #contact{
     padding: 1px 0 0 0;
     margin-top: 20px;
-    height: 100vh;
+    height: 95vh;
 }
 
 #contactArea{
@@ -444,8 +424,25 @@ video {
 }
 
 #contactArea h2:hover{
-    color: purple;
-    text-shadow: -5px -5px 5px #111, 0 0 0.5em aqua;
+    transform: scale(1.2);
+}
+
+#twitter h2:hover, #blog h2:hover{
+    background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 165, 0, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#github h2:hover, #stackOverflow h2:hover{
+    background: linear-gradient(to right, rgba(252, 252, 4, 1), rgba(17, 253, 5, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#linkedin h2:hover, #email h2:hover{
+    background: linear-gradient(to right,rgba(0, 0, 255, 1), rgba(128, 0, 128, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #contactArea a{
@@ -462,13 +459,34 @@ video {
 #contactArea{
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
 }
 
 .contactClass{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Footer ------------------------------------------------------------------------------ */
+
+#footerPics{
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.2) 10%, rgba(255, 165, 0, 0.2), rgba(252, 252, 4, 0.2), rgba(17, 253, 5, 0.2), rgba(0, 0, 255, 0.2), rgba(128, 0, 128, 0.2));
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;   
+}
+
+#footerPics img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#rainbowLine{
+    background-image: linear-gradient(to right, var(--rainbow));
+    height: 10px;
+    width: 100%;
 }
 
 /* Rainbow Dividers -------------------------------------------------------------------- */
@@ -502,7 +520,6 @@ video {
     background-color: #222;
     z-index:-1;
 }
-
 
 /* General -------------------------------------------------------------------------- */
 
@@ -539,21 +556,7 @@ h1{
         background-image: linear-gradient( 45deg, rgba(255, 0, 0, 1) 10%, rgba(255, 165, 0, 1), rgba(252, 252, 4, 1), rgba(17, 253, 5, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1));
     }
 }
-/* @keyframes sparkle{
-    17%{
-        background-image: linear-gradient( 45deg,  rgba(128, 0, 128, 1) 10%, rgba(255, 0, 0, 1), rgba(255, 165, 0, 1), rgba(252, 252, 4, 1), rgba(17, 253, 5, 1), rgba(0, 0, 255, 1));  
-        background-position: 0%;
-    }
-    33%{
-        background-position: 33%;
-    }
-    50%{
-        background-position: 50%;
-    }
-    100%{
-        background-position: 70%;
-    }
-} */
+
 /* Responsive ---------------------------------------------------------------------- */
 
 @media only screen and (max-width: 600px){
