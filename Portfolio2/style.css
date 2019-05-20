@@ -3,7 +3,7 @@ font-family: 'Bubblegum Sans', cursive;
 font-family: 'Delius Unicase', cursive;*/
 
 :root{
-    --rainbow:  rgba(255, 0, 0, 1) 10%, rgba(265, 165, 0, 1), rgba(252, 252, 4, 1), rgba(17, 253, 5, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1);
+    --rainbow:  rgba(255, 0, 0, 1) 10%, rgba(255, 165, 0, 1), rgba(252, 252, 4, 1), rgba(17, 253, 5, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1);
 }
 
 
@@ -110,6 +110,8 @@ li a:hover {
     top: 0;
     background-color: #222;
     border-radius: 0 0 125px 0;
+    display: flex;
+    align-content: space-around;
 }
 
 #homepage p{
@@ -117,19 +119,28 @@ li a:hover {
     padding: 300px 80px 0 80px;
 }
 
-#homepageBoxback h1, h3{
+#HomeHeading{
+    margin: 4vh;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#HomeHeading h1, h3{
     color: white;
     font-size: 2em;
-    text-align: center;
-    margin-left: 50px;
+    width: 100%;
+    margin: 0;
+    /* text-align: center; */
 }
 
 #circle{
     height: 110px;
     width: 110px;
-    position: absolute;
+    /* position: absolute;
     top: 20px;
-    left: 20px;
+    left: 20px; */
+    margin: 5vh;
     background-image: linear-gradient( to right, var(--rainbow));
     border-radius: 100px 100px 100px 100px;
 }
@@ -154,15 +165,18 @@ section div{
     max-height: auto;
     width: auto;
     height: auto;
+    text-align: center;
 }
 
 section div a{
+    flex: 0 1 100%;
     word-wrap: break-word;
     font-family: 'Philosopher', sans-serif;
     text-decoration: none;
     font-size: 7em;
     font-weight: bold;
     text-align: justify;
+    text-shadow: -5px -5px 5px #111, 0 0 0.5em aqua;
 }
 
 #ProjectsLink, #AboutLink{
@@ -170,7 +184,7 @@ section div a{
 }
 
 section div a:hover{
-    color: rgba(128, 0, 128, 0.4);
+    color: rgba(173, 4, 173, 0.4);
 }
 
 /* Homepage Decoration -------------------------------------------------------------------- */
@@ -184,6 +198,8 @@ section div a:hover{
     background-image: linear-gradient( 45deg, var(--rainbow));
     border-radius: 0 0 0 125px;
     z-index: -1;
+    animation: sparkle 1s;
+    /* transition: background-position 5s; */
 }
 
 #photo{
@@ -195,62 +211,76 @@ section div a:hover{
     z-index: -2;
 }
 
-#backing{
-    background-color: #222;
-    width: 99%;
-    height: 97%;
-    border-radius: 0 0 100px 0;    
-}
-
-#backing img{
-    position: absolute;
-    max-width:100%;
-    max-height:100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-}
-
-#logo{
-    top:0;
-    left: 0;
-}
-
-#image{
-    position: relative;
-    width: 35%;
-    height: 90%;
-    margin: 7% 45%;
-    z-index: 10;
-    border-radius: 100px;
-}
-
-#roroshadow{
-    width: 100%;
-    height: 100%;
-    box-shadow: inset 0 0 30px 20px #222;
-}
-
 /* About -------------------------------------------------------------------- */
 
 #about{
+    padding: 1px 0 0 0;
     width: 100%;
     height: auto;
     margin: 0;
     border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-#about p{
-    padding: 20px;
+#aboutText{
+    width:50vw;
+    margin: 10vh;
 }
+
+#aboutText p{
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+    flex: 1 1 50%;
+    text-align: justify;
+}
+
+#about #aboutImages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    width: 25%;
+    position: relative;
+    z-index: -1;
+}
+
+#aboutImages:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left, transparent 0%, #222 100%);
+}
+
+#aboutImages img{
+    width: 33%;
+    /* width: 100px; */
+    height: 100px;
+    object-fit: cover;
+}
+
+
+/* #contactPic{
+    margin: 10vh 0; 
+    width: 30vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(34, 34, 34, 1), rgba(34, 34, 34, 0)),url('images/laptop.jpeg');
+    background-blend-mode: darken;
+} */
 
 /* Projects -------------------------------------------------------------------- */
 
 #projects{
-    padding: 20px 0 0 0;
+    padding: 1px 0 0 0;
     height: auto;
     width: 100%;
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.2) 10%, rgba(265, 165, 0, 0.2), rgba(252, 252, 4, 0.2), rgba(17, 253, 5, 0.2), rgba(0, 0, 255, 0.2), rgba(128, 0, 128, 0.2));
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.2) 10%, rgba(255, 165, 0, 0.2), rgba(252, 252, 4, 0.2), rgba(17, 253, 5, 0.2), rgba(0, 0, 255, 0.2), rgba(128, 0, 128, 0.2));
 }
 
 #projectbg{
@@ -275,6 +305,7 @@ section div a:hover{
     margin: 0;
     width: 100%;
     padding: 10px 0 10px 0;
+    text-align: center;
 }
 
 #projects h1{
@@ -306,7 +337,7 @@ section div a:hover{
 #CongratsSection {
     display: flex;
     flex-wrap: wrap;
-    max-width: 30vw;
+    /* max-width: 30vw; */
     width: auto;
     height: auto;
     flex: 1 1 30%;
@@ -316,7 +347,7 @@ section div a:hover{
 #TictactoeSection {
     display: flex;
     flex-wrap: wrap;
-    max-width: 30vw;
+    /* max-width: 30vw; */
     width: auto;
     height: auto;
     flex: 1 1 30%;
@@ -326,7 +357,7 @@ section div a:hover{
 #ExercismSection {
     display: flex;
     flex-wrap: wrap;
-    max-width: 30vw;
+    /* max-width: 30vw; */
     width: auto;
     height: auto;
     flex: 1 1 30%;
@@ -358,58 +389,92 @@ video {
 }
 
 #pacman:hover {
-    box-shadow: 0px 0px 10px 10px red;
+    box-shadow: 0px 0px 30px 10px red;
 }
 
 #maze:hover {
-    box-shadow: 0px 0px 10px 10px orange;
+    box-shadow: 0px 0px 30px 10px orange;
 } 
 
 #congrats:hover {
-    box-shadow: 0px 0px 10px 10px yellow;
+    box-shadow: 0px 0px 30px 10px yellow;
 }
 
 #tictactoe:hover {
-    box-shadow: 0px 0px 10px 10px rgba(17, 253, 5, 1);
+    box-shadow: 0px 0px 30px 10px rgba(17, 253, 5, 1);
 }
 
 #exercism:hover {
-    box-shadow: 0px 0px 10px 10px blue;
+    box-shadow: 0px 0px 30px 10px blue;
 }
 
 
 /* Contact -------------------------------------------------------------------- */
 
 #contact{
-    /* height: 50px; */
+    padding: 1px 0 0 0;
     margin-top: 20px;
+    height: 100vh;
 }
 
 #contactArea{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: 3vw 0 0 5vw;
+}
+
+#contactArea div{
+    display: flex;
+    object-fit: contain;
+    justify-content: flex-start;
+    flex: 1 1 30%;
+    max-height: 100px;
+    height: 100px;
+    margin: 30px 1vw;
+}
+
+#contactArea h2{
+    align-items: center;
+    margin-left: 5vw;
+    color: white;
+    font-size: 1.5em;
+}
+
+#contactArea h2:hover{
+    color: purple;
+    text-shadow: -5px -5px 5px #111, 0 0 0.5em aqua;
+}
+
+#contactArea a{
+    text-decoration: none;
+}
+
+#contactArea div img{
+    max-width: 25%;
+    max-height: 100%;
     width: auto;
     height: auto;
 }
 
-/* #contactPic{
-    margin: 10vh 0; 
-    width: 30vw;
-    height: 100vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(to right, rgba(34, 34, 34, 1), rgba(34, 34, 34, 0)),url('images/laptop.jpeg');
-    background-blend-mode: darken;
-} */
+#contactArea{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
 
-#contactArea p{
-    max-width: 50vw;
+.contactClass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Rainbow Dividers -------------------------------------------------------------------- */
 
 .lineDivider{
+    margin-top: 60px;
     display:flex;
     width: 100%;
     height: 100px;
@@ -454,6 +519,41 @@ h1{
 
 /* Animations ---------------------------------------------------------------------- */
 
+@keyframes sparkle{
+    17%{
+        background-image: linear-gradient( 45deg,  rgba(128, 0, 128, 1) 10%, rgba(255, 0, 0, 1), rgba(255, 165, 0, 1), rgba(252, 252, 4, 1), rgba(17, 253, 5, 1), rgba(0, 0, 255, 1));  
+    }
+    33%{
+        background-image: linear-gradient( 45deg,  rgba(0, 0, 255, 1) 10%, rgba(128, 0, 128, 1), rgba(255, 0, 0, 1), rgba(255, 165, 0, 1), rgba(252, 252, 4, 1), rgba(17, 253, 5, 1));
+    }
+    50%{
+        background-image: linear-gradient( 45deg, rgba(17, 253, 5, 1) 10%, rgba(0, 0, 255, 1), rgba(128, 0, 128, 1), rgba(255, 0, 0, 1), rgba(255, 165, 0, 1), rgba(252, 252, 4, 1));
+    }
+    67%{
+        background-image: linear-gradient( 45deg, rgba(252, 252, 4, 1) 10%, rgba(17, 253, 5, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1), rgba(255, 0, 0, 1), rgba(255, 165, 0, 1));
+    }
+    83%{
+        background-image: linear-gradient( 45deg, rgba(255, 165, 0, 1) 10%, rgba(252, 252, 4, 1), rgba(17, 253, 5, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1), rgba(255, 0, 0, 1));
+    }
+    100%{
+        background-image: linear-gradient( 45deg, rgba(255, 0, 0, 1) 10%, rgba(255, 165, 0, 1), rgba(252, 252, 4, 1), rgba(17, 253, 5, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1));
+    }
+}
+/* @keyframes sparkle{
+    17%{
+        background-image: linear-gradient( 45deg,  rgba(128, 0, 128, 1) 10%, rgba(255, 0, 0, 1), rgba(255, 165, 0, 1), rgba(252, 252, 4, 1), rgba(17, 253, 5, 1), rgba(0, 0, 255, 1));  
+        background-position: 0%;
+    }
+    33%{
+        background-position: 33%;
+    }
+    50%{
+        background-position: 50%;
+    }
+    100%{
+        background-position: 70%;
+    }
+} */
 /* Responsive ---------------------------------------------------------------------- */
 
 @media only screen and (max-width: 600px){
