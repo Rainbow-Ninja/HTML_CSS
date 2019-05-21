@@ -311,6 +311,7 @@ video {
     padding: 20px;
 }
 
+
 #projectbg img {
     max-height: 300px;
     max-width: 400px;
@@ -383,7 +384,12 @@ video {
     background: linear-gradient(to left, transparent 0%, #222 100%);
 }
 
-#aboutImages img{
+.row{
+    display: flex;
+    flex-wrap: no-wrap;
+}
+
+#aboutImages div img{
     width: 25%;
     max-height: 92px;
     object-fit: cover;
@@ -399,16 +405,19 @@ video {
 #techStackPics{ 
     display: flex;
     flex: 1 1 100%;
-    width: 100%;
+    /* width: 100%; */
     flex-wrap: wrap;  
     justify-content: space-around;
     align-content: center;
-    /* margin-left: 15%; */
 }
 
+
 #techStackPics div{
-    width: 30%;
-    text-align: center;
+    width: 30vw;
+    text-align: center; 
+    width: auto;
+    height: auto;
+    flex: 1 1 400px;
 }
 
 #techStackPics p{
@@ -419,9 +428,9 @@ video {
 #techStackPics img{
     width: auto;
     height: 100px;
-    margin: 10px 20px 0 20px;
-    padding: 7vh 10vh 3vh 10vh;
-
+    margin: 10vh 20px 0 20px;
+    text-align: center;
+    padding: 0;
 }
 
 /* Contact -------------------------------------------------------------------- */
@@ -434,20 +443,20 @@ video {
 
 #contactArea{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 100%;
-    width: auto;
+    flex: 1 1 100%;
     height: auto;
     margin: 3vw 0 0 5vw;
 }
 
+
 #contactArea div{
     display: flex;
-    object-fit: contain;
     justify-content: flex-start;
-    flex: 1 1 30%;
-    max-height: 100px;
-    height: 100px;
+    width: auto;
+    height: auto;
+    flex: 2 1 300px;
     margin: 30px 1vw;
 }
 
@@ -485,15 +494,8 @@ video {
 }
 
 #contactArea div img{
-    max-width: 25%;
-    max-height: 100%;
+    height: 100px;
     width: auto;
-    height: auto;
-}
-
-#contactArea{
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .contactClass{
@@ -587,8 +589,10 @@ h1{
 /* Responsive ---------------------------------------------------------------------- */
 
 /* less than PC more than iPad -------------------------------------------------------------*/
+
 @media only screen and (max-width: 950px){
 /* homepage -------------------------------------------------------------------------------*/
+
     #rainbowBall{
         display: none;
     }
@@ -687,7 +691,7 @@ h1{
 
 }
 /* Mobile ----------------------------------------------------------------------------*/
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 365px){
 /* projects-------------------------------------------------------------------------- */
     #container{
         /* overflow: hidden; */
@@ -705,44 +709,69 @@ h1{
 /* About -------------------------------------------------------------------- */
 
 #aboutText{
-    width:80%;
+    width: 80%;
     margin: 0;
 }
 
 #aboutText p{
     font-size: 1.4em;
 }
+
 #about{
     position: relative;
 }
 
-#about #aboutImages{
+#about #aboutImages {
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
     /* margin-top: 10px; */
-    width: 80%;
+    max-width: 100vw;
+    width:auto;
     /* height: 100%; */
     position: absolute;
-    top: 20%;
+    top: 25vh;
     right:0;
     z-index: -1;
 }
 
-#aboutImages:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to left, transparent 0%, #222 100%);
+#aboutImages .row{
+    width: 100%;
 }
 
-#aboutImages img{
+#aboutImages div img{
     width: 25%;
-    max-height: 92px;
+    max-width: 80px;
+    max-height: 80px;
     object-fit: cover;
 }
+
+#aboutText{
+    margin-top: 15vh;
+}
+
+#aboutText #p2{
+    margin-top: 15vh;
+}
+
+#row2{
+    margin-top: 90%;
+    width: 100%;
+}
+
+#aboutText #p3{
+    margin-top: 15%;
+}
+
+#row3{
+    margin-top: 50%;
+}
+
+#aboutImages:after {
+    display: none;
+}
+
+/* Contact ------------------------------------------------------------------ */
+
 
 }
