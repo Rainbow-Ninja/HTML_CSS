@@ -51,6 +51,7 @@ nav{
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 ul {
@@ -198,6 +199,10 @@ section img{
     background-color: white;
 }
 
+#ContactLink h6{
+    font-size: 0.63em;
+}
+
 /* Homepage Decoration -------------------------------------------------------------------- */
 
 #rainbowBall{
@@ -229,21 +234,35 @@ section img{
     flex-wrap: wrap;
 }
 
-#projectbg p{
-    margin: 0 0 20px 0;
+#projectbg h4{
+    margin: 0;
     border: 0;
     text-align: center;
-    padding: 10px 0 30px 0;
+    padding: 10px 0 0 0;
     width: 100%;
+    max-width: 70%;
+    color: white;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+
+#projectbg p{
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    padding: 0 0 30px 0;
+    color: rgb(170, 231, 241);
 }
 
 #projectbg h3{
+    font-family: 'Philosopher', sans-serif;
     border: 0;
     margin-top: 5vh;
     width: 100%;
     padding: 10px 0 5px 0;
     text-align: center;
     color: rgba(110, 210, 250, 1);
+    text-shadow: -5px -5px 5px #111, 0 0 0.5em aqua;
 }
 
 #projects h1{
@@ -261,9 +280,7 @@ section img{
     justify-content: space-around;
 }
 
-#projectbg div p{
-    max-width: 70%;
-}
+
 
 #MazeSection {
     display: flex;
@@ -309,6 +326,7 @@ video {
     height: auto;
     flex: 2 1 400px;
     padding: 20px;
+    -webkit-transform: translateZ(0); /*put videos behind nav */
 }
 
 
@@ -421,6 +439,7 @@ video {
 }
 
 #techStackPics p{
+    font-family: 'Philosopher', sans-serif;
     text-align: center;
     margin-top: 0;
 }
@@ -465,6 +484,7 @@ video {
     margin-left: 5vw;
     color: white;
     font-size: 1.5em;
+    font-family: 'Philosopher', sans-serif;
 }
 
 #contactArea h2:hover{
@@ -706,72 +726,83 @@ h1{
     video {
         max-width: 300px;
     }
-/* About -------------------------------------------------------------------- */
 
+    #projectbg h3{
+        font-size: 1.7em;
+    }
+
+    #projectbg h4{
+        /* margin: 0;
+        border: 0;
+        text-align: center;
+        padding: 10px 0 0 0; */
+        width: 100%;
+        max-width: 70%;
+        /* color: white;
+        font-weight: normal; */
+        font-size: 1.4em;
+    }
+/* About -------------------------------------------------------------------- */
 #aboutText{
-    width: 80%;
-    margin: 0;
+    width:60vw;
+    margin: 0 1vw;
+}
+
+/* #aboutText{
+    width:50vw;
+    margin: 7vh;
 }
 
 #aboutText p{
-    font-size: 1.4em;
-}
-
-#about{
-    position: relative;
-}
-
-#about #aboutImages {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    /* margin-top: 10px; */
-    max-width: 100vw;
-    width:auto;
-    /* height: 100%; */
-    position: absolute;
-    top: 25vh;
-    right:0;
-    z-index: -1;
-}
-
-#aboutImages .row{
+    padding: 20px;
     width: 100%;
+    margin: 0;
+    flex: 1 1 50%;
+    text-align: justify;
+} */
+
+#about #aboutImages{
+    margin: 9vw 0;
+    width: 35vw;
 }
 
 #aboutImages div img{
-    width: 25%;
-    max-width: 80px;
-    max-height: 80px;
-    object-fit: cover;
+    width: 50%;
+    max-height: 85px;
 }
 
-#aboutText{
-    margin-top: 15vh;
+.row{
+    flex-wrap: wrap;
 }
 
-#aboutText #p2{
-    margin-top: 15vh;
-}
+/* TechStack/Skills -----------------------------------------------------------*/
 
-#row2{
-    margin-top: 90%;
-    width: 100%;
-}
-
-#aboutText #p3{
-    margin-top: 15%;
-}
-
-#row3{
-    margin-top: 50%;
-}
-
-#aboutImages:after {
-    display: none;
+#techStackPics div{
+    flex: 1 1 150px;
 }
 
 /* Contact ------------------------------------------------------------------ */
 
+#contactArea div img{
+    height: 80px;
+}
 
+#contactArea div{
+    justify-content: center;
+    flex: 2 1 150px;
+}
+
+.contactClass{
+    flex-wrap: wrap;
+    max-width: 45%;
+}
+
+#contactArea h2{
+    margin-left: 0;
+    min-width: 150px;
+    text-align: center;
+}
+
+#contactArea{
+    margin: 3vw 0 0 0;
 }
