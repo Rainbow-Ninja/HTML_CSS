@@ -244,6 +244,7 @@ section img{
     color: white;
     font-weight: normal;
     font-size: 1.5em;
+
 }
 
 
@@ -279,8 +280,6 @@ section img{
     flex: 1 1 50%;
     justify-content: space-around;
 }
-
-
 
 #MazeSection {
     display: flex;
@@ -654,8 +653,12 @@ h1{
 
 }
 
-/* Galaxy5 up to almost iPad ----------------------------------------------------------------*/
-@media only screen and (max-width: 700px){
+
+/* Galaxy5 up to iPad ----------------------------------------------------------------*/
+/* Galaxy5 up to iPad ----------------------------------------------------------------*/
+/* Galaxy5 up to iPad ----------------------------------------------------------------*/
+
+@media only screen and (max-width: 770px){
 /* homepage -------------------------------------------------------------------------------*/
     #rainbowBall{
         display: none;
@@ -709,60 +712,128 @@ h1{
         margin-top: 0;
     }
 
+/* Nav  -----------------------------------------------------------------------------*/
+li {
+    font-size: 1.5em;
+ }
+
+ li a {
+    padding: 14px 14px;
+ }
+
+ /* projects-------------------------------------------------------------------------- */
+
+ #projectbg div {
+    /* display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto; */
+    flex: 1 1 45%;
+    max-width: 45%;
+    /* justify-content: space-around; */
 }
+
+video {
+    /* margin: 0 auto; */
+    max-width: 300px;
+    max-height: 300px;
+    /* width: auto;
+    height: auto; */
+    flex: 2 1 300px;
+    /* padding: 20px; */
+    /* -webkit-transform: translateZ(0); put videos behind nav */
+}
+
+#projectbg h4{
+    height: 120px;
+}
+
+/* About -----------------------------------------------------------------------------*/
+
+#aboutText{
+    max-width:55%;
+    margin: 2vh 1vh 1vh 1vh;
+    width:55vw;
+}
+
+#about #aboutImages{
+    margin: 5vh 1vh 1vh 0;
+    max-width: 35%;
+    width: 35vw;
+}
+
+/* TechStack/Skills ----------------------------------------------------------------- */
+#techStackPics div{
+    flex: 1 1 200px;
+}
+
+/* Contact -------------------------------------------------------------------------- */
+
+#contactArea div{
+    margin: 8% 1vw;
+}
+}
+
+
 /* Mobile ----------------------------------------------------------------------------*/
-@media only screen and (max-width: 365px){
+/* Mobile ----------------------------------------------------------------------------*/
+/* Mobile ----------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 360px){
+
+/* Nav -------------------------------------------------------------------------------*/
+li {
+    font-size: 0.95em;
+ }
+
+ li a {
+    padding: 14px 10px;
+ }
+
 /* projects-------------------------------------------------------------------------- */
-    #container{
-        /* overflow: hidden; */
-    }
 
-    #container h1{
-        letter-spacing: 0.3em;
-        font-size: 2.5em;
-        margin: 2vh 0 0 5vh;
-    }
-    
-    video {
-        max-width: 300px;
-    }
+#container h1{
+    letter-spacing: 0.3em;
+    font-size: 2.5em;
+    margin: 2vh 0 0 5vh;
+}
 
-    #projectbg h3{
-        font-size: 1.7em;
-    }
+video {
+    max-width: 300px;
+}
 
-    #projectbg h4{
-        /* margin: 0;
-        border: 0;
-        text-align: center;
-        padding: 10px 0 0 0; */
-        width: 100%;
-        max-width: 70%;
-        /* color: white;
-        font-weight: normal; */
-        font-size: 1.4em;
-    }
+#projectbg h3{
+    font-size: 1.7em;
+}
+
+#projectbg h4{
+    width: 100%;
+    max-width: 70%;
+    font-size: 1.4em;
+}
+
+#projectbg div p{
+    padding:0;
+}
 /* About -------------------------------------------------------------------- */
+
+#about{
+    max-width: 100%;
+    justify-content: center;
+}
 #aboutText{
     width:60vw;
     margin: 0 1vw;
-}
-
-/* #aboutText{
-    width:50vw;
-    margin: 7vh;
+    max-width: 60%;
 }
 
 #aboutText p{
-    padding: 20px;
+    padding: 12% 0 0 0;
     width: 100%;
-    margin: 0;
-    flex: 1 1 50%;
-    text-align: justify;
-} */
+}
 
 #about #aboutImages{
-    margin: 9vw 0;
+    margin: 10vw 0;
     width: 35vw;
 }
 
@@ -801,8 +872,15 @@ h1{
     margin-left: 0;
     min-width: 150px;
     text-align: center;
+    color: rgb(78, 118, 228);
+    text-decoration: underline;
 }
 
 #contactArea{
-    margin: 3vw 0 0 0;
+    margin: 10% 0 0 0;
+}
+
+.rainbowLine{
+    margin-top: 3vh;
+}
 }
