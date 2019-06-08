@@ -1,0 +1,199 @@
+body{
+    background: #25A8FC;
+}
+
+.box{
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 8%;
+    width: 600px;
+    height: 420px;
+    background: none;
+}
+
+.head{
+    position: absolute;
+    top: 16.5%;
+    left: 25%;
+    width: 50%;
+    height: 67%;
+    background: #A6BECF;
+    border-radius: 50%;
+}
+
+.head-copy{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #A6BECF;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.ear-left{
+    position: absolute;
+    width: 60%;
+    height: 65%;
+    left: -20%;
+    top: 5%;
+    background: #A6BECF;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.ear-right{
+    position: absolute;
+    width: 60%;
+    height: 65%;
+    right: -20%;
+    top: 5%;
+    background: #A6BECF;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.inner-ear{
+    position: absolute;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    background: #819CAF;
+    box-shadow: 0 0 10px #333;
+}
+
+.ear-left .ear-fluff{
+    position: absolute;
+    -webkit-clip-path: polygon(29% 3%, 46% 22%, 53% 0, 68% 59%, 5% 56%, 25% 44%, 5% 22%, 31% 24%);
+    clip-path: polygon(29% 3%, 46% 22%, 53% 0, 68% 59%, 5% 56%, 25% 44%, 5% 22%, 31% 24%);
+    background: #A6BECF;
+    width: 100%;
+    height: 100%;
+    top: 10%;
+    left: 5%;
+    transform: rotate(-20deg);
+    z-index: 3;
+}
+
+.ear-right .ear-fluff{
+    position: absolute;
+    -webkit-clip-path: polygon(29% 3%, 46% 22%, 53% 0, 68% 59%, 5% 56%, 25% 44%, 5% 22%, 31% 24%);
+    clip-path: polygon(29% 3%, 46% 22%, 53% 0, 68% 59%, 5% 56%, 25% 44%, 5% 22%, 31% 24%);
+    background: #A6BECF;
+    width: 100%;
+    height: 100%;
+    top: 3%;
+    right: 7%;
+    transform: rotate(120deg);
+    z-index: 3;
+}
+
+.eye-left{
+    position: absolute;
+    background: white;
+    width: 30%;
+    height: 33%;
+    top: 25%;
+    left: 21%;
+    border-radius: 50%;
+    z-index: 5;
+    box-shadow: 0 0 10px #333;
+}
+
+.eye-right{
+    position: absolute;
+    background: white;
+    width: 30%;
+    height: 33%;
+    top: 25%;
+    right: 21%;
+    border-radius: 50%;
+    z-index: 4;
+    box-shadow: 0 0 10px #333;
+}
+
+.pupil{
+    position: absolute;
+    width: 28%;
+    height: 30%;
+    top: 35%;
+    left: 36%;
+    border-radius: 50%;
+    background: #27354A;
+}
+
+.grin{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 35%;
+    left: 33%;
+    border-radius: 50%;
+    border: 4px solid black;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    z-index: 3;
+    transform: rotate(-27deg);
+    background: #A6BECF; 
+}
+
+.leaf{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 75%;
+    left: 75%;
+    border-radius: 0 50%;
+    z-index: 2;
+    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0.2, darkgreen), color-stop(0.5, lime), color-stop(0.8, darkgreen));
+}
+
+.leaf2{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 80%;
+    left: 70%;
+    border-radius: 0 50%;
+    z-index: 2;
+    transform: rotate(25deg);
+    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0.2, darkgreen), color-stop(0.5, lime), color-stop(0.8, darkgreen));
+}
+
+.nose{
+    position: absolute;
+    background-image:
+    radial-gradient(#BE845F, rgb(70, 32, 2));
+    width: 25%;
+    height: 42.5%;
+    left: 37%;
+    top: 45%;
+    border-radius: 50px;
+    z-index: 5;
+}
+
+.hair-left{
+    position: absolute;
+    top: -8%;
+    left: 43%;
+    width: 20%;
+    height: 20%;
+    background: #A6BECF;
+    -webkit-clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+.hair-right{
+    position: absolute;
+    top: -4%;
+    left: 48%;
+    width: 20%;
+    height: 20%;
+    background: #A6BECF;
+    -webkit-clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    transform: rotate(15deg);
+}
