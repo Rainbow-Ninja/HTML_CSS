@@ -218,3 +218,54 @@
     bottom: -5%;
     background-image: radial-gradient(at top, rgb(241, 100, 124),rgb(241, 218, 7) 60%)
 }
+
+.mouth{
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    left: 48%;
+    top: 59%;
+    background-color: rgb(243, 117, 138);
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.tongue{
+    position: absolute;
+    height: 40%;
+    width: 90%;
+    background-color: rgb(189, 52, 74);
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+}
+
+.bite1, .bite2, .bite3{
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    background-color: rgb(137, 215, 241);
+    border-radius: 50%;
+}
+
+.bite1{
+    top: 53%;
+    left: 65.5%;
+    z-index: 15;
+}
+
+.bite2{
+    top: 46%;
+    left: 64%;
+    z-index: 15;
+}
+
+.bite3{
+    top: 39%;
+    left: 64%;
+    z-index: 15;
+}
