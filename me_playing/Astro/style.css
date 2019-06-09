@@ -1,0 +1,86 @@
+#box{
+    width: 100%;
+    height: 100%;
+    background: rgb(243, 44, 44);
+    position: absolute;
+}
+
+#head{
+    width: 200px;
+    height: 180px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    right: 45%;
+    top: 25%;
+    overflow: hidden;
+}
+
+#face{
+    width: 150px;
+    height: 130px;
+    border-radius: 50%;
+    background: pink;
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    z-index: 6;
+}
+
+#cheek{
+    width: 150px;
+    height: 75px;
+    border-radius: 50%;
+    background: pink;
+    border: 2px solid black;
+    position: absolute;
+    z-index: 5;
+    right: 49%;
+    top: 44%;
+    transform: rotate(15deg);
+}
+
+#ear{
+    width: 34px;
+    height: 25px;
+    border-radius: 50%;
+    background: pink;
+    position: absolute;
+    right: 47%;
+    top: 51%;
+    border: solid black 2px;
+    z-index: 6;
+    transform: rotate(-5deg);
+    border-left-color: transparent;
+}
+
+#forehead-hair{
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    transform: rotate(90deg) skew(35deg);
+    background: black;
+    right: 45%;
+    z-index: 7;
+}
+
+#left-hair{
+    width: 65px;
+    height: 95px;
+    position: absolute;
+    transform: rotate(88deg) skew(40deg);
+    background: black;
+    left: 43.3%;
+    top: 20%;
+    /* z-index: 7; */
+}
+
+#right-hair{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    transform: rotate(10deg) skew(-55deg);
+    background: black;
+    left: 50%;
+    top: 44%;
+}
