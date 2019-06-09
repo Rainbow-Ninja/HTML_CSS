@@ -1,0 +1,220 @@
+.box{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(137, 215, 241);
+    position: absolute;
+}
+
+.shell-back{
+    position: absolute;
+    width: 500px;
+    height: 60%;
+    top: 30%;
+    left: 25%;
+    border-radius: 50%;
+    background-color: rgb(241, 218, 7);
+    border: solid yellow 2px;
+}
+
+/* .curl{
+    position: absolute;
+    width: 67px;
+    height: 73px;
+    border-radius: 50%;
+    background-color: rgb(241, 218, 7);
+    border: solid yellow 2px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(30deg);
+    top: 43%;
+    left: -0.5%;
+    z-index: 6;
+} */
+
+.shell-front{
+    position: absolute;
+    width: 500px;
+    height: 60%;
+    top: 30%;
+    left: 30%;
+    border-radius: 50%;
+    background-color: rgb(241, 218, 7);
+    border: solid yellow 2px;
+    z-index: 5;
+}
+
+.taco-base{
+    position: absolute;
+    left: 25%;
+    top: 62%;
+    width: 568px;
+    height: 50px;
+    border-radius: 0 0 25% 40%;
+    background-color: rgb(241, 218, 7);
+    border: solid yellow 2px;
+    border-top-color: transparent;
+    z-index: 5;
+}
+
+.flat-bottom{
+    position: absolute;
+    width: 700px;
+    height: 30%;
+    left: 25%;
+    top: 63%;
+    background-color: rgb(137, 215, 241);
+    z-index: 5;
+}
+
+.meat, .meat2, .meat3, .meat4, .meat5{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(136, 66, 1);
+    border-radius: 50%;
+    border: solid rgb(88, 43, 1) 2px;
+    z-index: 4;
+}
+
+.meat{
+    top: 42%;
+    left: 0.5%;
+    z-index: 6;
+    width: 65px;
+    border-top-color: transparent;
+    transform: rotate(15deg);
+}
+
+.meat2{
+    top: 20%;
+    left: 10%;
+}
+
+.meat3{
+    top: 30%;
+    left: 3%;
+}
+
+.meat4{
+    top: -3%;
+    left: 30%;
+    width: 105px;
+    height: 80px;
+}
+
+.meat5{
+    top: 5%;
+    left: 16%;
+    width: 100px;
+}
+
+.tomato, .tomato2, .tomato3{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(240, 50, 50);
+    border: solid rgb(204, 3, 3) 10px;
+    z-index: 4;
+}
+
+.tomato{
+    left: 28%;
+    top: 39%;
+}
+
+.tomato2{
+    left: 33%;
+    top: 30%;
+}
+
+.tomato3{
+    left: 40%;
+    top: 25%;
+}
+
+.lettuce, .lettuce2, .lettuce3, .lettuce4, .lettuce5{
+    position: absolute;
+    width: 95px;
+    height: 105px;
+    border-radius: 50%;
+    background-color: rgb(46, 190, 3);
+    border: solid rgb(88, 180, 1) 2px;
+    z-index: 3;
+}
+
+.lettuce{
+    left: 25%;
+    top: 42%;
+}
+
+.lettuce2{
+    left: 28%;
+    top: 30%;
+}
+
+.lettuce3{
+    left: 33%;
+    top: 25%;
+}
+
+.lettuce4{
+    left: 38%;
+    top: 22%;
+}
+
+.lettuce5{
+    left: 43%;
+    top: 21%;
+    transform: rotate(25deg);
+}
+
+.left-eye{
+    position: absolute;
+    left: 23%;
+    top: 15%;
+}
+
+.right-eye{
+    position: absolute;
+    right: 35%;
+    top: 15%;
+}
+
+.eye-white{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.pupil{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background-color: black;
+    border-radius: 50%;
+    top: 5%;
+    left: 5%;
+}
+
+.white{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    background-color: white;
+    border-radius: 50%;
+    left: 80%;
+    top: 30%;
+}
+
+.cheek{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background-color: red;
+    border-radius: 50%;
+    bottom: -5%;
+    background-image: radial-gradient(at top, rgb(241, 100, 124),rgb(241, 218, 7) 60%)
+}
