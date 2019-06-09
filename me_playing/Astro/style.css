@@ -96,7 +96,7 @@
     background: black;
     left: 43.3%;
     top: 20%;
-    /* z-index: 7; */
+
 }
 
 #right-hair{
@@ -107,6 +107,30 @@
     background: black;
     left: 50%;
     top: 44%;
+}
+
+#shine{
+    width: 3%;
+    height: 10%;
+    border-radius: 0 25% 45% 25%;
+    transform: rotate(-25deg);
+    background: white;
+    left: 90%;
+    top: 30%;
+    position: absolute;
+    z-index: 2;
+}
+
+#shine2{
+    width: 2.5%;
+    height: 4%;
+    border-radius: 25% 45% 70% 70%;
+    transform: rotate(-15deg);
+    background: white;
+    left: 93%;
+    top: 42%;
+    position: absolute;
+    z-index: 2;
 }
 
 #left-eyebrow{
