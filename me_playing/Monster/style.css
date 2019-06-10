@@ -1,0 +1,185 @@
+.egg{
+    width: 300px;
+    height: 450px;
+    background-color: lime;
+    display: block;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    z-index: 4;
+}
+
+.left-white, .right-eye{
+    position: absolute;
+    border: black solid 1px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: -2px 2px 5px 2px rgb(3, 175, 3);
+}
+
+.left-eye{
+    /* border: green solid 4px; */
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 15%;
+    top: 22%;
+}
+
+.left-white{
+    width: 60px;
+    height: 60px;
+    left: 20%;
+    top: 20%;
+}
+
+.right-eye{
+    width: 75px;
+    height: 75px;
+    left: 53%;
+    top: 27%;
+}
+
+.top-lid{
+    position: absolute;
+    width: 65px;
+    height: 30px;
+    border: transparent solid 2px;
+    border-bottom-color: rgb(3, 175, 3);
+    z-index: 3;
+    border-radius: 50%;
+    transform: rotate(-16deg);
+    background-color: lime;
+    top: 1%;
+    left: 3%;
+}
+
+.bottom-lid{
+    position: absolute;
+    width: 75px;
+    height: 30px;
+    border: transparent solid 2px;
+    border-top-color: rgb(3, 175, 3);
+    z-index: 3;
+    border-radius: 50%;
+    transform: rotate(-17deg);
+    background-color: lime;
+    bottom: 3%;
+    right: 0;
+}
+
+.iris{
+    position: absolute;
+    width: 28%;
+    height: 28%;
+    background-image: radial-gradient(rgb(28, 197, 248) 35%, rgb(4, 64, 231));
+    border-radius: 50%;
+    top: 32%;
+    left: 65%;
+}
+
+.pupil{
+    position: absolute;
+    width: 34%;
+    height: 34%;
+    background-color: black;
+    border-radius: 50%;
+    top: 34%;
+    left: 37.5%;
+}
+
+.shine{
+    position: absolute;
+    width: 28%;
+    height: 28%;
+    background-color: rgb(178, 233, 250);
+    border-radius: 50%;
+    top: 12%;
+    right: 7%;
+}
+
+.left-glass{
+   width: 110px;
+   height: 70px;
+   border-radius: 50% 50% 48% 51% / 6% 13% 49% 38%;
+   border: 2px solid black;
+   position: absolute;
+   top: 26%;
+   left: 10%;
+   z-index: 4;
+   background-color: rgba(253, 253, 253, 0.3);
+}
+
+.right-glass{
+    width: 110px;
+    height: 70px;
+    border-radius: 50% 50% 48% 51% / 13% 6% 49% 38%;
+    border: 2px solid black;
+    position: absolute;
+    top: 26%;
+    right: 10%;
+    z-index: 4;
+    background-color: rgba(253, 253, 253, 0.3);
+ }
+
+ .beard, .beard-tip, .round-beard-tip{
+    width: 310px;
+    height: 250px;
+    background-color: rgb(94, 2, 94);
+    position: absolute;
+    border-radius: 50% 50% 50% 50% / 30% 30% 60% 60%;
+    top: 45%;
+    left: -1.5%;
+    z-index: 3;
+ }
+
+ .beard-tip{
+    background-color: rgb(94, 2, 94);
+    border-radius: 50% 50% 50% 50% / 30% 30% 80% 80%;
+    top: 50%;
+    z-index: 1;
+ }
+
+ .round-beard-tip{
+    background-color: white;
+    top: 65%;
+    left: 45%;
+    z-index: 2;
+    width: 250px;
+    height: 200px;
+ }
+
+ .outer-mouth{
+     position: absolute;
+     width: 85%;
+     height: 60%;
+     background-color: lime;
+     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+     top: 5%;
+     left: 7.3%;
+ }
+
+ .left-arm-outer{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-right: 150px solid rgb(238, 85, 131);
+    border-bottom: 150px solid transparent;
+    top: 23%;
+    left: 23%;
+ }
+
+ .left-arm-inner{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-right: 150px solid white;
+    border-bottom: 150px solid transparent;
+    left: 25%;
+    z-index: 2;
+    top: 23.5%;
+ }
