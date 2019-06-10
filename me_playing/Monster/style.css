@@ -1,3 +1,120 @@
+.box{
+    background-color: rgb(245, 161, 245);
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ----CAT-------------------------------------------------------------------- */
+
+.cat-head{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-image: radial-gradient(rgb(20, 20, 20) 40%, rgb(70, 70, 70));
+    left: 32%;
+    top: 6%;
+    box-shadow: 0 0 5px 5px rgb(20, 20, 20);
+    z-index: 2;
+}
+
+.left-cat-eye, .right-cat-eye{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background-color: rgb(250, 227, 19);
+    border-radius: 50% 10%;
+}
+
+.left-cat-eye{
+    top: 47%;
+    left: 21%;
+}
+
+.right-cat-eye{
+    top: 22%;
+    left: 49%;
+}
+
+.cat-pupil{
+    position: absolute;
+    width: 65%;
+    height: 65%;
+    border-radius: 0 50%;
+    background-color: black;
+    left: 20%;
+    top: 20%;
+}
+
+.left-paw, .right-paw{
+    width: 40px;
+    height: 50px;
+    background-image: radial-gradient(rgb(20, 20, 20) 40%, rgb(70, 70, 70));
+    position: absolute;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.left-paw{
+    left: 34%;
+    top: 15%;
+    transform: rotate(-48deg);
+}
+
+.right-paw{
+    left: 36.3%;
+    top: 10.3%;
+    transform: rotate(-40deg);
+}
+
+.nose{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid rgb(243, 108, 130);
+    border-left: 10px solid transparent;
+    top: 45%;
+    left: 45%;
+}
+
+.left-ear, .right-ear{
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 40px solid rgb(20, 20, 20);
+    border-bottom: 20px solid transparent;
+    position: absolute;
+}
+
+.left-ear{
+    left: 29.5%;
+    top: 9%;
+    transform: rotate(10deg);
+    z-index: 0;
+}
+
+.right-ear{
+    left: 33%;
+    top: 1%;
+    transform: rotate(75deg);
+    z-index: 0;
+}
+
+.inner-ear{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 35px solid rgb(255, 167, 182);
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: 15%;
+    top: 0;
+    transform: translateY(-10px) translateX(10px);
+}
+
+/* ----BODY--------------------------------------------------------------- */
+
 .egg{
     width: 300px;
     height: 450px;
@@ -10,6 +127,8 @@
     z-index: 4;
 }
 
+/* -----EYES----------------------------------------------------------- */
+
 .left-white, .right-eye{
     position: absolute;
     border: black solid 1px;
@@ -20,7 +139,6 @@
 }
 
 .left-eye{
-    /* border: green solid 4px; */
     width: 100px;
     height: 100px;
     position: absolute;
@@ -100,6 +218,8 @@
     right: 7%;
 }
 
+/* -----GLASSES------------------------------------------------------- */
+
 .left-glass{
    width: 110px;
    height: 70px;
@@ -124,6 +244,8 @@
     background-color: rgba(253, 253, 253, 0.3);
  }
 
+ /* -------BEARD--------------------------------------------------------- */
+
  .beard, .beard-tip, .round-beard-tip{
     width: 310px;
     height: 250px;
@@ -132,34 +254,114 @@
     border-radius: 50% 50% 50% 50% / 30% 30% 60% 60%;
     top: 45%;
     left: -1.5%;
-    z-index: 3;
+    z-index: 4;
  }
 
  .beard-tip{
     background-color: rgb(94, 2, 94);
     border-radius: 50% 50% 50% 50% / 30% 30% 80% 80%;
     top: 50%;
-    z-index: 1;
+    z-index: 2;
  }
 
  .round-beard-tip{
-    background-color: white;
+    background-color: rgb(245, 161, 245);
     top: 65%;
     left: 45%;
     z-index: 2;
-    width: 250px;
+    width: 200px;
     height: 200px;
  }
 
- .outer-mouth{
-     position: absolute;
-     width: 85%;
-     height: 60%;
-     background-color: lime;
-     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-     top: 5%;
-     left: 7.3%;
+ .square-beard{
+    width: 50px;
+    height: 70px;
+    background-color: rgb(94, 2, 94);
+    position: absolute;
+    bottom: 15%;
+    z-index: 10;
+    left: 40%;
  }
+
+ .circle1, .circle2{
+    width: 40px;
+    height: 53px;
+    border-radius: 50%;
+    background-color: lime;
+    position: absolute;
+    top: -1%;
+ }
+
+ .circle1{
+    left: 74%;
+ }
+
+ .circle2{
+    right: 74%;
+ }
+
+ /* ----MOUTH----------------------------------------------------- */
+
+ .outer-mouth{
+    position: absolute;
+    width: 85%;
+    height: 60%;
+    background-color: lime;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    top: 5%;
+    left: 7.3%;
+ }
+
+ .left-mouth{
+    position: absolute;
+    width: 110px;
+    height: 50px;
+    background-color: rgb(248, 46, 46);
+    transform: rotate(-20deg);
+    z-index: 7;
+    border-radius: 50%;
+    top: 20%;
+    left: 11%;
+    overflow: hidden;
+ }
+
+ .right-mouth{
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    background-color: rgb(248, 46, 46);
+    transform: rotate(20deg);
+    z-index: 7;
+    border-radius: 50%;
+    top: 23%;
+    left: 35%;
+    overflow: hidden;
+ }
+
+ .tooth{
+     width: 35px;
+     height: 50px;
+     background-color: rgb(250, 245, 170);
+     position: absolute;
+     border-radius: 35% 10% 5% 5%;
+     left: 30%;
+     top: 10%;
+     border: solid rgb(124, 124, 120) 1px;
+ }
+
+ .tooth1{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(250, 245, 170);
+    position: absolute;
+    border-radius: 45% 25% 5% 5%;
+    left: 60%;
+    top: 50%;
+    border: solid rgb(124, 124, 120) 1px;
+    transform: rotate(15deg);
+}
+
+ /* ----ARMS-------------------------------------------------- */
 
  .left-arm-outer{
     position: absolute;
@@ -177,9 +379,93 @@
     width: 0;
     height: 0;
     border-top: 100px solid transparent;
-    border-right: 150px solid white;
+    border-right: 150px solid rgb(245, 161, 245);
     border-bottom: 150px solid transparent;
     left: 25%;
     z-index: 2;
     top: 23.5%;
+ }
+
+ .right-arm-outer{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 300px solid transparent;
+    border-right: 200px solid rgb(238, 85, 131);
+    border-bottom: 100px solid transparent;
+    top: 40%;
+    left: 48%;
+    transform: rotate(170deg);
+ }
+
+ .right-arm-inner{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 300px solid transparent;
+    border-right: 200px solid rgb(245, 161, 245);
+    border-bottom: 100px solid transparent;
+    left: 46.5%;
+    z-index: 2;
+    top: 41.5%;
+    transform: rotate(170deg)
+ }
+
+ .square{
+     position: absolute;
+     width: 110px;
+     height: 250px;
+     background-color: rgb(245, 161, 245);
+     left: 50%;
+     top: 70%;
+ }
+
+ /* ----LEGS-------------------------------------------------------------- */
+
+ .left-leg-outer{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-right: 100px solid rgb(238, 85, 131);
+    border-bottom: 150px solid transparent;
+    top: 80%;
+    left: 5%;
+ }
+
+ .left-leg-inner{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-right: 100px solid rgb(245, 161, 245);
+    border-bottom: 150px solid transparent;
+    left: 25%;
+    transform: translateY(-150px) translateX(25px);
+    z-index: 1;
+ }
+
+ .right-leg-outer{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 140px solid transparent;
+    border-right: 90px solid rgb(238, 85, 131);
+    border-bottom: 140px solid transparent;
+    top: 85%;
+    right: -5%;
+    transform: rotate(180deg);
+    z-index: 3;
+ }
+
+ .right-leg-inner{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 150px solid transparent;
+    border-right: 100px solid rgb(245, 161, 245);
+    border-bottom: 150px solid transparent;
+    left: 25%;
+    transform: translateY(-150px) translateX(25px);
+    z-index: 1;
  }
