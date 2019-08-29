@@ -1,7 +1,3 @@
-/* font-family: 'Philosopher', sans-serif;
-font-family: 'Bubblegum Sans', cursive; 
-font-family: 'Delius Unicase', cursive;*/
-
 :root{
     --rainbow:  rgba(255, 0, 0, 1) 10%, rgba(255, 165, 0, 1), rgba(252, 252, 4, 1), rgba(17, 253, 5, 1), rgba(0, 0, 255, 1), rgba(128, 0, 128, 1);
 }
@@ -29,7 +25,7 @@ font-family: 'Delius Unicase', cursive;*/
     background: linear-gradient(rgba(255, 0, 0, 0.7) 10%, rgba(265, 165, 0, 0.7), rgba(252, 252, 4, 0.7), rgba(17, 253, 5, 0.7), rgba(0, 0, 255, 0.7), rgba(128, 0, 128, 0.7));
   }
 
-/* Body -------------------------------------------------------------------- */
+/* Body ---------------------------------------------------------------------------------- */
 
 body{
    background-color: #222;
@@ -42,11 +38,10 @@ p{
     font-size: 1.5em;
 }
 
-/* Nav Bar -------------------------------------------------------------------- */
+/* Nav Bar ------------------------------------------------------------------------------- */
 
 nav{
     position: fixed;
-    /* overflow: hidden; */
     background-color: #333;
     width: 100%;
     top: 0;
@@ -65,7 +60,6 @@ ul {
 
 li {
    display: inline-block;
-   z-index: 10;
    font-family: 'Philosopher', sans-serif;
    font-size: 1.2em;
 }
@@ -81,7 +75,7 @@ li a:hover {
    background-color: #111;
 }
 
-/* HomePage -------------------------------------------------------------------- */
+/* HomePage ------------------------------------------------------------------------------- */
 
 #homepage{
     display: flex;
@@ -98,9 +92,8 @@ li a:hover {
     width: 50%;
     position: absolute;
     top: 0;
-    background-image: linear-gradient( to right, var(--rainbow));
+    background-image: linear-gradient(to right, var(--rainbow));
     border-radius: 0 0 125px 0;
-    z-index: -1;
 }
 
 /* grey on top of rainbow making border */
@@ -112,7 +105,6 @@ li a:hover {
     background-color: #222;
     border-radius: 0 0 125px 0;
     display: flex;
-    align-content: space-around;
 }
 
 /* my name and "title" */
@@ -130,6 +122,7 @@ li a:hover {
     margin: 0;
 }
 
+/* my face -----*/
 #circle{
     height: 110px;
     width: 110px;
@@ -161,7 +154,6 @@ section h6{
 
 section div{
     max-width: 250px;
-    width: auto;
     height: auto;
     text-align: center;
 }
@@ -169,7 +161,6 @@ section div{
 section div a{
     margin: 0;
     font-size: 4em;
-    flex: 0 1 100%;
     font-family: 'Philosopher', sans-serif;
     text-decoration: none;
     font-weight: bold;
@@ -177,7 +168,6 @@ section div a{
     text-shadow: -5px -5px 5px #111, 0 0 0.5em aqua;
     color: rgba(110, 210, 250, 1);
 }
-
 
 section div a:hover{
     color: rgba(195, 63, 247, 0.925);
@@ -213,11 +203,10 @@ section img{
     left: 70%;
     background-image: linear-gradient( 45deg, var(--rainbow));
     border-radius: 0 0 0 125px;
-    z-index: -1;
     animation: sparkle 1s;
 }
 
-/* Projects -------------------------------------------------------------------- */
+/* Projects -------------------------------------------------------------------------------- */
 
 #projects{
     padding: 1px 0 0 0;
@@ -234,27 +223,29 @@ section img{
     flex-wrap: wrap;
 }
 
+/* video blurbs */
 #projectbg h4{
     margin: 0;
     border: 0;
     text-align: center;
     padding: 10px 0 0 0;
-    width: 100%;
-    max-width: 70%;
+    max-width: 85%;
     color: white;
     font-weight: normal;
     font-size: 1.5em;
-
 }
 
-
+/* click video line */
 #projectbg p{
     font-size: 1.3em;
     margin-bottom: 30px;
     padding: 0 0 30px 0;
     color: rgb(170, 231, 241);
+    width: 100%;
+    text-align: center;
 }
 
+/* video headings */
 #projectbg h3{
     font-family: 'Philosopher', sans-serif;
     border: 0;
@@ -266,53 +257,22 @@ section img{
     text-shadow: -5px -5px 5px #111, 0 0 0.5em aqua;
 }
 
+/* section heading */
 #projects h1{
-    color: white; /*fix this it's see thru!!*/
+    color: white;
     position: absolute;
-    z-index: 2;
 }
 
-#PacmanSection {
+#PacmanSection, #MazeSection, #bobPageSection, #farmersSection {
     display: flex;
     flex-wrap: wrap;
-    width: auto;
-    height: auto;
     flex: 1 1 50%;
     justify-content: space-around;
 }
 
-#MazeSection {
+#TictactoeSection, #ExercismSection, #CongratsSection, #AstroBoySection, #cuteTacoSection, #bobRossSection {
     display: flex;
     flex-wrap: wrap;
-    width: auto;
-    height: auto;
-    flex: 1 1 50%;
-    justify-content: space-around;
-}
-
-#CongratsSection {
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    height: auto;
-    flex: 1 1 30%;
-    justify-content: space-around;
-}
-
-#TictactoeSection {
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    height: auto;
-    flex: 1 1 30%;
-    justify-content: space-around;
-}
-
-#ExercismSection {
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    height: auto;
     flex: 1 1 30%;
     justify-content: space-around;
 }
@@ -321,20 +281,18 @@ video {
     margin: 0 auto;
     max-width: 400px;
     max-height: 300px;
-    width: auto;
-    height: auto;
-    flex: 2 1 400px;
     padding: 20px;
     -webkit-transform: translateZ(0); /*put videos behind nav */
 }
 
-
 #projectbg img {
     max-height: 300px;
     max-width: 400px;
-    width: auto;
-    height: auto;
     padding: 20px;
+}
+
+#caption h4 {
+    max-width: 100%;
 }
 
 #pacman:hover {
@@ -357,7 +315,23 @@ video {
     box-shadow: 0px 0px 30px 10px blue;
 }
 
-/* About -------------------------------------------------------------------- */
+#AstroBoy:hover {
+    box-shadow: 0px 0px 30px 10px rgb(160, 1, 160);
+}
+
+#cuteTaco:hover {
+    box-shadow: 0px 0px 30px 10px red;
+}
+
+#bobPage:hover {
+    box-shadow: 0px 0px 30px 10px orange;
+}
+
+#farmers:hover {
+    box-shadow: 0px 0px 30px 10px yellow;
+}
+
+/* About ---------------------------------------------------------------------------------- */
 
 #about{
     width: 100%;
@@ -369,7 +343,7 @@ video {
 
 #aboutText{
     width:50vw;
-    margin: 7vh;
+    margin: 7vh 3vh;
 }
 
 #aboutText p{
@@ -380,17 +354,49 @@ video {
     text-align: justify;
 }
 
+#workStudy h3{
+    color: rgba(110, 210, 250, 1);
+    text-shadow: -5px -5px 5px #111, 0 0 0.5em aqua;
+    margin-top: 3vh; 
+}
+
+#workStudy{
+    width: 90vw;
+    margin: 0 3vh 7vh 5vh;
+}
+
+#workStudy p{
+    padding: 5px 10px;
+    width: 100%;
+    margin: 0;
+    flex: 1 1 50%;
+    text-align: justify;
+}
+
+#workStudy span a{
+    color: rgba(78, 118, 228, 1);
+}
+
+#workStudy span a:hover{
+    color: rgba(132, 62, 245, 0.7);
+}
+
 #about #aboutImages{
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    margin-top: 10px;
+    margin: 5vh 5vh 0 1vh;
     width: 35%;
-    height: 100%;
     position: relative;
-    z-index: -1;
 }
 
+#aboutImages div img{
+    width: 25%;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+/* colour blend on pics */
 #aboutImages:after {
     content: '';
     position: absolute;
@@ -403,16 +409,10 @@ video {
 
 .row{
     display: flex;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
 }
 
-#aboutImages div img{
-    width: 25%;
-    max-height: 92px;
-    object-fit: cover;
-}
-
-/* TechStack/Skills ------------------------------------------------------------------------------ */
+/* TechStack/Skills ------------------------------------------------------------------------ */
 
 #techStack{
     background-image: linear-gradient(to right, rgba(255, 0, 0, 0.2) 10%, rgba(255, 165, 0, 0.2), rgba(252, 252, 4, 0.2), rgba(17, 253, 5, 0.2), rgba(0, 0, 255, 0.2), rgba(128, 0, 128, 0.2));
@@ -421,20 +421,14 @@ video {
 
 #techStackPics{ 
     display: flex;
-    flex: 1 1 100%;
-    /* width: 100%; */
     flex-wrap: wrap;  
     justify-content: space-around;
     align-content: center;
 }
 
-
 #techStackPics div{
     width: 30vw;
     text-align: center; 
-    width: auto;
-    height: auto;
-    flex: 1 1 400px;
 }
 
 #techStackPics p{
@@ -451,7 +445,7 @@ video {
     padding: 0;
 }
 
-/* Contact -------------------------------------------------------------------- */
+/* Contact -------------------------------------------------------------------------------- */
 
 #contact{
     padding: 1px 0 0 0;
@@ -463,18 +457,13 @@ video {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    flex: 1 1 100%;
-    height: auto;
     margin: 3vw 0 0 5vw;
 }
-
 
 #contactArea div{
     display: flex;
     justify-content: flex-start;
-    width: auto;
-    height: auto;
-    flex: 2 1 300px;
+    flex: 1 1 300px;
     margin: 30px 1vw;
 }
 
@@ -490,6 +479,7 @@ video {
     transform: scale(1.2);
 }
 
+/* colours when clicked */
 #twitter h2:hover, #blog h2:hover{
     background: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 165, 0, 1));
     -webkit-background-clip: text;
@@ -527,8 +517,7 @@ video {
     background-color: white;
 }
 
-
-/* Rainbow Dividers -------------------------------------------------------------------- */
+/* Rainbow Dividers ----------------------------------------------------------------------- */
 
 .lineDivider{
     margin-top: 60px;
@@ -562,6 +551,7 @@ video {
     border: 0;
 }
 
+/* bottom of page */
 .rainbowLine{
     background-image: linear-gradient(to right, var(--rainbow));
     height: 10px;
@@ -569,20 +559,20 @@ video {
     margin-top: 5vh;
 }
 
-/* General -------------------------------------------------------------------------- */
+/* General -------------------------------------------------------------------------------- */
 
 h1{
     margin: 1.5vh 0 0 5vh;
     font-family: 'Bubblegum Sans', cursive;
     color: white;
     letter-spacing: 0.5em;
-    z-index: 10;
     font-size: 3em;
     font-weight: bold;
-    border:0;    
+    border:0;
+    text-shadow: -5px -5px 5px #111, 0 0 0.5em aqua;    
 }
 
-/* Animations ---------------------------------------------------------------------- */
+/* Animations ----------------------------------------------------------------------------- */
 
 @keyframes sparkle{
     17%{
@@ -605,12 +595,17 @@ h1{
     }
 }
 
-/* Responsive ---------------------------------------------------------------------- */
+/* Responsive ----------------------------------------------------------------------------- */
+/* Responsive ----------------------------------------------------------------------------- */
+/* Responsive ----------------------------------------------------------------------------- */
+/* Responsive ----------------------------------------------------------------------------- */
+/* Responsive ----------------------------------------------------------------------------- */
 
 /* less than PC more than iPad -------------------------------------------------------------*/
 
 @media only screen and (max-width: 950px){
-/* homepage -------------------------------------------------------------------------------*/
+
+/* homepage --------------------------------------------------------------------------------*/
 
     #rainbowBall{
         display: none;
@@ -653,22 +648,20 @@ h1{
 
 }
 
-
-/* Galaxy5 up to iPad ----------------------------------------------------------------*/
-/* Galaxy5 up to iPad ----------------------------------------------------------------*/
-/* Galaxy5 up to iPad ----------------------------------------------------------------*/
+/* Mobile more specifically the Galaxy S5---------------------------------------------------*/
+/* Mobile ----------------------------------------------------------------------------------*/
+/* Mobile ----------------------------------------------------------------------------------*/
+/* Mobile ----------------------------------------------------------------------------------*/
+/* Mobile ----------------------------------------------------------------------------------*/
 
 @media only screen and (max-width: 770px){
-/* homepage -------------------------------------------------------------------------------*/
-    #rainbowBall{
-        display: none;
-    }
 
+/* Homepage --------------------------------------------------------------------------------*/
     #homepagebox{
         height: 25%;
         width: 98%;
     }
-    
+
     #homepageBoxBack{
         height: 99%;
         width: 97%;
@@ -709,178 +702,137 @@ h1{
     }
 
     section h6{
-        margin-top: 0;
+        margin: 1vh 0 4vh 0;
+        text-decoration: underline;
     }
 
-/* Nav  -----------------------------------------------------------------------------*/
-li {
-    font-size: 1.5em;
- }
+    section div h6:hover{
+        transform: scale(1);
+        margin: 1vh 0 0 0;
+    }
 
- li a {
-    padding: 14px 14px;
- }
+/* Nav -------------------------------------------------------------------------------------*/
+    li {
+        font-size: 0.95em;
+    }
 
- /* projects-------------------------------------------------------------------------- */
+    li a {
+        padding: 14px 10px;
+    }
 
- #projectbg div {
-    /* display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    height: auto; */
-    flex: 1 1 45%;
-    max-width: 45%;
-    /* justify-content: space-around; */
-}
+/* projects-------------------------------------------------------------------------------- */
 
-video {
-    /* margin: 0 auto; */
-    max-width: 300px;
-    max-height: 300px;
-    /* width: auto;
-    height: auto; */
-    flex: 2 1 300px;
-    /* padding: 20px; */
-    /* -webkit-transform: translateZ(0); put videos behind nav */
-}
+    #container h1{
+        letter-spacing: 0.3em;
+        font-size: 2.5em;
+        margin: 2vh 0 0 5vh;
+    }
 
-#projectbg h4{
-    height: 120px;
-}
+    video {
+        max-width: 300px;
+    }
 
-/* About -----------------------------------------------------------------------------*/
+    #projectbg h3{
+        font-size: 1.7em;
+    }
 
-#aboutText{
-    max-width:55%;
-    margin: 2vh 1vh 1vh 1vh;
-    width:55vw;
-}
+    #projectbg h4{
+        width: 100%;
+        max-width: 70%;
+        font-size: 1.4em;
+    }
 
-#about #aboutImages{
-    margin: 5vh 1vh 1vh 0;
-    max-width: 35%;
-    width: 35vw;
-}
+    #projectbg div p{
+        padding:0;
+    }
 
-/* TechStack/Skills ----------------------------------------------------------------- */
-#techStackPics div{
-    flex: 1 1 200px;
-}
+/* About ---------------------------------------------------------------------------------- */
 
-/* Contact -------------------------------------------------------------------------- */
+    #about{
+        max-width: 100%;
+        justify-content: center;
+    }
 
-#contactArea div{
-    margin: 8% 1vw;
-}
-}
+    #aboutText{
+        width:60vw;
+        margin: 0 1vw;
+        max-width: 60%;
+    }
 
+    #aboutText p{
+        padding: 12% 0 0 0;
+        width: 100%;
+        text-align: left;
+    }
 
-/* Mobile ----------------------------------------------------------------------------*/
-/* Mobile ----------------------------------------------------------------------------*/
-/* Mobile ----------------------------------------------------------------------------*/
+    #workStudy{
+        width: 90%;
+        margin: 0;
+        margin-bottom: 5vh;
+    }
 
-@media only screen and (max-width: 360px){
+    #workStudy p{
+        width: 90%;
+        text-align: left;
+    }
 
-/* Nav -------------------------------------------------------------------------------*/
-li {
-    font-size: 0.95em;
- }
+    #about #aboutImages{
+        margin: 10vw 0;
+        width: 35vw;
+    }
 
- li a {
-    padding: 14px 10px;
- }
+    #aboutImages div img{
+        width: 50%;
+        max-height: 85px;
+    }
 
-/* projects-------------------------------------------------------------------------- */
+    .row{
+        flex-wrap: wrap;
+    }
 
-#container h1{
-    letter-spacing: 0.3em;
-    font-size: 2.5em;
-    margin: 2vh 0 0 5vh;
-}
+/* TechStack/Skills ------------------------------------------------------------------------*/
 
-video {
-    max-width: 300px;
-}
+    #techStackPics div{
+        width: 50vw;
+    }
 
-#projectbg h3{
-    font-size: 1.7em;
-}
+    #techStackPics img{
+        width: auto;
+        height: 75px;
+        margin: 5vh 20px 0 20px;
+    }
 
-#projectbg h4{
-    width: 100%;
-    max-width: 70%;
-    font-size: 1.4em;
-}
+/* Contact -------------------------------------------------------------------------------- */
 
-#projectbg div p{
-    padding:0;
-}
-/* About -------------------------------------------------------------------- */
+    #contactArea div img{
+        height: 80px;
+    }
 
-#about{
-    max-width: 100%;
-    justify-content: center;
-}
-#aboutText{
-    width:60vw;
-    margin: 0 1vw;
-    max-width: 60%;
-}
+    #contactArea div{
+        justify-content: center;
+        width: 50vw;
+        margin-top: 20px;
+    }
 
-#aboutText p{
-    padding: 12% 0 0 0;
-    width: 100%;
-}
+    .contactClass{
+        flex-wrap: wrap;
+        max-width: 45%;
+    }
 
-#about #aboutImages{
-    margin: 10vw 0;
-    width: 35vw;
-}
+    #contactArea h2{
+        margin-left: 0;
+        margin-bottom: 0;
+        min-width: 150px;
+        text-align: center;
+        color: rgb(78, 118, 228);
+        text-decoration: underline;
+    }
 
-#aboutImages div img{
-    width: 50%;
-    max-height: 85px;
-}
+    #contactArea{
+        margin: 10% 0 0 0;
+    }
 
-.row{
-    flex-wrap: wrap;
-}
-
-/* TechStack/Skills -----------------------------------------------------------*/
-
-#techStackPics div{
-    flex: 1 1 150px;
-}
-
-/* Contact ------------------------------------------------------------------ */
-
-#contactArea div img{
-    height: 80px;
-}
-
-#contactArea div{
-    justify-content: center;
-    flex: 2 1 150px;
-}
-
-.contactClass{
-    flex-wrap: wrap;
-    max-width: 45%;
-}
-
-#contactArea h2{
-    margin-left: 0;
-    min-width: 150px;
-    text-align: center;
-    color: rgb(78, 118, 228);
-    text-decoration: underline;
-}
-
-#contactArea{
-    margin: 10% 0 0 0;
-}
-
-.rainbowLine{
-    margin-top: 3vh;
-}
+    .rainbowLine{
+        margin-top: 3vh;
+    }
 }
