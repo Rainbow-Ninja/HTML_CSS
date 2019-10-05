@@ -198,7 +198,7 @@ body{
     background-color: purple;
     position: absolute;
     top: 130px;
-    left: -120px;
+    left: -20px;
     animation: twinkle 0.5s linear infinite alternate;
 }
 
@@ -334,7 +334,7 @@ body{
     position: absolute;
     bottom: 0;
     right: 0;
-    animation: spray 3s 0.7 ease-out infinite;
+    animation: spray 3s 0.7s ease-out infinite;
 }
 
 @keyframes spray {
@@ -392,7 +392,7 @@ body{
         transform: scaleY(0.1);
     }
     5.1% {
-        transform: scaleY(0.1);
+        transform: scaleY(1);
     }
 }
 
@@ -402,7 +402,7 @@ body{
     border-radius: 50%;
     position: absolute;
     bottom: 10px;
-    right: 0;
+    right: 0px;
     background-color: lightsteelblue;
     overflow: hidden;
     border: 2px solid #333;
